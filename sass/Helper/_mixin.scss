@@ -1,0 +1,49 @@
+@mixin styleText($color,$fs,$fw) {
+    color: $color;
+    font-size: $fs;
+    font-weight: $fw;
+}
+@mixin responsive($screen) { //$srceen: chứa tên màn hình
+    @if(map-has-key($map:$breakpoints , $key:$screen )) {
+        // đúng tên màn hình
+        $value: map-get($map:$breakpoints, $key:$screen);
+        @media screen and (max-width:$value){
+            @content;
+        }
+    }
+    @else{
+        @warn "Màn hình không tồn tại";
+    }
+}
+@font-face {
+    font-family: "Macan";
+    src: url(//woff/macan-regular-933670febf2bb63ce33fc050f972a318.woff2);
+    src: local("Macan-Regular"),url(//assetsv2.fiverrcdn.com/assets/fonts/macan/macan-regular-811b15fc3e56f5e18a0dc8514d9b8b29.eot?#iefix) format("embedded-opentype"),url(//assetsv2.fiverrcdn.com/assets/fonts/macan/macan-regular-933670febf2bb63ce33fc050f972a318.woff2) format("woff2"),url(//assetsv2.fiverrcdn.com/assets/fonts/macan/macan-regular-49725a75af8ee2dc9a123910570fc6b5.woff) format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap
+}
+@font-face {
+    font-family: 'DomaineDisplay';
+    src: url(https://npm-assets.fiverrcdn.com/assets/uploads/domaine-display-web-medium-italic.eot);
+    src: local('DomaineDisplay-MediumItalic'),
+        url(https://npm-assets.fiverrcdn.com/assets/uploads/domaine-display-web-medium-italic.eot?#iefix) format('embedded-opentype'),
+        url(https://npm-assets.fiverrcdn.com/assets/uploads/domaine-display-web-medium-italic.woff2) format('woff2'),
+        url(https://npm-assets.fiverrcdn.com/assets/uploads/domaine-display-web-medium-italic.woff) format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DomaineDisplay';
+    src: url(https://npm-assets.fiverrcdn.com/assets/uploads/domaine-display-web-bold.eot);
+    src: local('DomaineDisplay-Bold'),
+        url(https://npm-assets.fiverrcdn.com/assets/uploads/domaine-display-web-bold.eot?#iefix) format('embedded-opentype'),
+        url(https://npm-assets.fiverrcdn.com/assets/uploads/domaine-display-web-bold.woff2) format('woff2'),
+        url(https://npm-assets.fiverrcdn.com/assets/uploads/domaine-display-web-bold.woff) format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+

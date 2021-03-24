@@ -1,0 +1,3276 @@
+@font-face {
+  font-family: "Macan";
+  src: url(//woff/macan-regular-933670febf2bb63ce33fc050f972a318.woff2);
+  src: local("Macan-Regular"), url(//assetsv2.fiverrcdn.com/assets/fonts/macan/macan-regular-811b15fc3e56f5e18a0dc8514d9b8b29.eot?#iefix) format("embedded-opentype"), url(//assetsv2.fiverrcdn.com/assets/fonts/macan/macan-regular-933670febf2bb63ce33fc050f972a318.woff2) format("woff2"), url(//assetsv2.fiverrcdn.com/assets/fonts/macan/macan-regular-49725a75af8ee2dc9a123910570fc6b5.woff) format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DomaineDisplay';
+  src: url(https://npm-assets.fiverrcdn.com/assets/uploads/domaine-display-web-medium-italic.eot);
+  src: local("DomaineDisplay-MediumItalic"), url(https://npm-assets.fiverrcdn.com/assets/uploads/domaine-display-web-medium-italic.eot?#iefix) format("embedded-opentype"), url(https://npm-assets.fiverrcdn.com/assets/uploads/domaine-display-web-medium-italic.woff2) format("woff2"), url(https://npm-assets.fiverrcdn.com/assets/uploads/domaine-display-web-medium-italic.woff) format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DomaineDisplay';
+  src: url(https://npm-assets.fiverrcdn.com/assets/uploads/domaine-display-web-bold.eot);
+  src: local("DomaineDisplay-Bold"), url(https://npm-assets.fiverrcdn.com/assets/uploads/domaine-display-web-bold.eot?#iefix) format("embedded-opentype"), url(https://npm-assets.fiverrcdn.com/assets/uploads/domaine-display-web-bold.woff2) format("woff2"), url(https://npm-assets.fiverrcdn.com/assets/uploads/domaine-display-web-bold.woff) format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Macan";
+  color: #62646a;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.container {
+  max-width: 1410px;
+  margin: 0 auto;
+}
+
+svg {
+  vertical-align: text-bottom;
+}
+
+.owl-prev, .owl-next {
+  position: absolute;
+  top: 42%;
+  width: 45px;
+  height: 45px;
+  border-radius: 50% !important;
+  background-color: #fff !important;
+  box-shadow: 0 2px 8px 2px rgba(20, 23, 28, 0.1);
+  transition: 0.5s all;
+  z-index: 3;
+}
+
+.owl-prev span, .owl-next span {
+  color: #505763;
+  font-size: 40px;
+  font-weight: normal;
+  line-height: 1.2;
+}
+
+.owl-prev:hover, .owl-next:hover {
+  box-shadow: 0px 0px 3px 5px rgba(20, 23, 28, 0.1);
+}
+
+.owl-prev:focus, .owl-next:focus {
+  outline: none;
+}
+
+.owl-next {
+  left: unset;
+  right: -6%;
+}
+
+.owl-prev {
+  right: unset;
+  left: -6%;
+}
+
+.owl-theme .owl-nav .disabled {
+  opacity: 0 !important;
+}
+
+.slick-initialized.slick-slider.slick-dotted {
+  margin-bottom: 10px;
+}
+
+.slick-dots li button:before {
+  font-size: 25px;
+}
+
+.slick-dots li {
+  margin: 0;
+}
+
+.slick-slide.slick-active {
+  outline: none;
+}
+
+.input-group-text {
+  background-color: #FFFFFF;
+  padding-left: 15px;
+}
+
+.form-control {
+  border-left: 0;
+  height: calc(1.5em + 1.5rem + 2px);
+}
+
+.form-control:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: #ced4da !important;
+}
+
+.btn {
+  padding: 0.375rem 1.5rem;
+}
+
+.btn-success {
+  border-radius: 0px 4px 4px 0px;
+  background-color: #1dbf73;
+  border-color: #1dbf73;
+}
+
+.btn-success:hover {
+  background-color: #19A463;
+  border-color: #19A463;
+}
+
+.input-group-prepend {
+  margin-right: -13px;
+}
+
+.input-group-prepend svg {
+  opacity: 0.5;
+}
+
+header {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  float: left;
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  padding-top: 15px;
+}
+
+header .fixed-top {
+  z-index: 0;
+}
+
+header nav {
+  background-color: white;
+}
+
+header nav .menu-bars svg g {
+  fill: #404145;
+}
+
+header nav .item-sub-menu {
+  margin-bottom: 0;
+}
+
+header nav .item-sub-menu .item__menu {
+  padding-right: 34.8px;
+}
+
+header nav .item-sub-menu .item__menu a {
+  color: #777;
+}
+
+header nav .item-sub-menu .item__menu a:hover {
+  text-decoration: none;
+}
+
+header .fiverrlogo #fiverr_logo_nav, header .fiverrNav #fiverr_logo_nav {
+  fill: white;
+}
+
+header .fiverrlogo .trigger-icon, header .fiverrNav .trigger-icon {
+  fill: white;
+}
+
+header .fiverrlogo .sub-nav-net, header .fiverrNav .sub-nav-net {
+  fill: #404145;
+}
+
+header .fiverrlogo svg {
+  cursor: pointer;
+}
+
+header .fiverrlogo svg .sub-nav-logo {
+  fill: #404145 !important;
+}
+
+header .fiverrNav {
+  padding-top: 3px;
+}
+
+header .fiverrNav ul {
+  display: flex;
+}
+
+header .fiverrNav ul li {
+  list-style: none;
+}
+
+header .fiverrNav ul li a {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+header .fiverrNav ul li a:hover {
+  text-decoration: none;
+}
+
+header .fiverrNav ul li .join {
+  background: 0 0;
+  color: #fff;
+  font-weight: 700;
+  border: 1px #fff solid;
+  transition: background-color .2s;
+  box-sizing: border-box;
+  padding: 0px 20px;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+header .fiverrNav ul li .join:hover {
+  text-decoration: none;
+  background-color: #1dbf73;
+  border-color: #1dbf73;
+}
+
+header .sub-nav-menu ul li a {
+  color: #62646a;
+}
+
+header .sub-nav-menu ul li a:hover {
+  color: #1dbf73;
+}
+
+header .sub-nav-menu ul .join-button a {
+  color: #1dbf73;
+  border-color: #1dbf73;
+}
+
+header .sub-nav-menu ul .join-button a:hover {
+  color: #fff;
+}
+
+@media (max-width: 575px) {
+  header .fiverrlogo {
+    display: block !important;
+    justify-content: center !important;
+  }
+  header .fiverrlogo #fiverr_logo_nav {
+    fill: #404145 !important;
+  }
+}
+
+@media (max-width: 599px) {
+  header {
+    position: relative;
+  }
+  header nav {
+    display: none !important;
+  }
+  header nav .btn-success {
+    display: none;
+  }
+  header .menu-bars {
+    display: flex;
+    justify-content: flex-start !important;
+    padding-top: 5px;
+  }
+  header .menu-bars g {
+    fill: #404145 !important;
+  }
+  header .fiverrlogo {
+    display: flex !important;
+    justify-content: flex-end;
+  }
+  header .fiverrlogo #fiverr_logo_nav {
+    fill: #404145 !important;
+  }
+  header li {
+    display: none;
+  }
+  header .signIn {
+    display: none !important;
+  }
+  header .join-button {
+    display: flex;
+    justify-content: flex-end;
+  }
+  header .join-button a {
+    padding: 0 !important;
+    color: #404145 !important;
+    border: none !important;
+  }
+  header .join-button a:hover {
+    background-color: transparent !important;
+    border-color: transparent !important;
+  }
+}
+
+@media (max-width: 767px) {
+  header nav .menu-bars {
+    display: flex !important;
+    align-items: center !important;
+  }
+  header .menu-bars {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 5px;
+  }
+  header .menu-bars g {
+    fill: #fff;
+  }
+  header .col-6 {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  header .fiverrlogo {
+    display: flex;
+  }
+  header .fiverrlogo #fiverr_logo_nav {
+    fill: #fff;
+  }
+  header li {
+    display: none;
+  }
+  header .join-button, header .signIn {
+    display: flex;
+  }
+  header .join-button a, header .signIn a {
+    color: #fff;
+  }
+}
+
+@media (max-width: 899px) {
+  header .menu-bars {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 7px;
+  }
+  header .menu-bars g {
+    fill: #fff;
+  }
+  header .col-6 {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  header .fiverrlogo {
+    display: flex;
+  }
+  header .fiverrlogo #fiverr_logo_nav {
+    fill: #fff;
+  }
+  header ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+  header ul li {
+    display: none;
+    padding-left: 10px;
+  }
+  header ul .join-button, header ul .signIn {
+    display: flex;
+    justify-content: flex-end;
+  }
+  header ul .join-button a, header ul .signIn a {
+    color: #fff;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: 991px) {
+  .col-6 {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+@media (min-width: 900px) {
+  header .menu-bars {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 7px;
+  }
+  header .menu-bars g {
+    fill: #fff;
+  }
+  header .fiverrlogo {
+    display: flex;
+  }
+  header .fiverrlogo #fiverr_logo_nav {
+    fill: #fff;
+  }
+  header ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  header ul li {
+    display: flex;
+  }
+  header ul .english, header ul .usd {
+    display: none;
+  }
+  header ul .english a, header ul .usd a {
+    color: #fff;
+  }
+}
+
+@media (min-width: 1160px) {
+  header .col-lg-1 {
+    display: none;
+  }
+  header .fiverrlogo {
+    display: flex;
+  }
+  header .fiverrlogo #fiverr_logo_nav {
+    fill: #fff;
+  }
+  header ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  header ul li {
+    display: flex;
+  }
+  header ul .english, header ul .usd {
+    display: flex;
+  }
+  header ul .english a, header ul .usd a {
+    color: #fff;
+  }
+}
+
+@media (max-width: 1159px) {
+  header nav .btn-success {
+    display: none;
+  }
+}
+
+@media (max-width: 1446px) {
+  header .nav-res {
+    display: none !important;
+  }
+}
+
+.fiverrCarousel .img {
+  position: relative;
+  display: flex;
+  background-position: center;
+  background-size: auto;
+  height: 680px;
+}
+
+.fiverrCarousel .img .hero_Name {
+  position: absolute;
+  color: white;
+  bottom: 10px;
+  right: 2%;
+}
+
+.fiverrCarousel .img .hero_Name .star {
+  color: #FFC100;
+}
+
+.fiverrCarousel .andrea {
+  background-image: url(../../img/bg-hero-1-1792-x1.jpg);
+}
+
+.fiverrCarousel .moon {
+  background-image: url(../../img/bg-hero-2-1792-x1.jpg);
+}
+
+.fiverrCarousel .ritika {
+  background-image: url(../../img/bg-hero-3-1792-x1.jpg);
+}
+
+.fiverrCarousel .zach {
+  background-image: url(../../img/bg-hero-4-1792-x1.jpg);
+}
+
+.fiverrCarousel .gabrielle {
+  background-image: url(../../img/bg-hero-5-1792-x1.jpg);
+}
+
+.fiverrCarousel .fiverrSearch {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  top: 240px;
+}
+
+.fiverrCarousel .fiverrSearch h1 {
+  line-height: 3.5rem;
+  padding-bottom: 24px;
+  color: #fff;
+  font-size: 3.4rem;
+  font-weight: 700;
+}
+
+.fiverrCarousel .fiverrSearch h1 i {
+  font-family: 'DomaineDisplay';
+  font-weight: 500;
+}
+
+.fiverrCarousel .fiverrSearch .popular {
+  padding-top: 22px;
+  display: flex;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.fiverrCarousel .fiverrSearch .popular ul {
+  display: flex;
+  width: 100%;
+  margin-left: 12px;
+  text-align: left;
+}
+
+.fiverrCarousel .fiverrSearch .popular ul li {
+  list-style: none;
+  margin-right: 15px;
+}
+
+.fiverrCarousel .fiverrSearch .popular ul li a {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  background-color: transparent;
+  line-height: 24px;
+  font-weight: 600;
+  color: #fff;
+  padding: 5px 12px 5px;
+  border: 1px solid #fff;
+  border-radius: 40px;
+  transition: .5s all;
+}
+
+.fiverrCarousel .fiverrSearch .popular ul li a:hover {
+  text-decoration: none;
+  background-color: #fff;
+  color: #111;
+}
+
+@media screen and (max-width: 576px) {
+  .fiverrCarousel .img {
+    display: block;
+    background-position: center;
+    background-size: cover;
+    height: 320px !important;
+  }
+  .fiverrCarousel .fiverrSearch {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    top: 130px;
+  }
+  .fiverrCarousel .fiverrSearch .container {
+    width: 85%;
+  }
+  .fiverrCarousel .fiverrSearch .container h1 {
+    line-height: 40px;
+    padding-bottom: 24px;
+    color: #fff;
+    font-size: 33px !important;
+    font-weight: 700;
+  }
+  .fiverrCarousel .fiverrSearch .container h1 i {
+    font-family: 'DomaineDisplay';
+    font-weight: 500;
+  }
+  .fiverrCarousel .fiverrSearch .container .input-group .form-control {
+    border-radius: .25rem;
+  }
+  .fiverrCarousel .fiverrSearch .container .input-group .btn {
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 4px 4px 4px 4px;
+  }
+  .fiverrCarousel .fiverrSearch .container .popular {
+    padding-top: 22px;
+    display: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .fiverrCarousel .fiverrSearch .container .popular ul {
+    display: flex;
+    width: 100%;
+    margin-left: 12px;
+    text-align: left;
+  }
+  .fiverrCarousel .fiverrSearch .container .popular ul li {
+    list-style: none;
+    margin-right: 15px;
+  }
+  .fiverrCarousel .fiverrSearch .container .popular ul li a {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: transparent;
+    line-height: 24px;
+    font-weight: 600;
+    color: #fff;
+    padding: 5px 12px 5px;
+    border: 1px solid #fff;
+    border-radius: 40px;
+    transition: .5s all;
+  }
+  .fiverrCarousel .fiverrSearch .container .popular ul li a:hover {
+    text-decoration: none;
+    background-color: #fff;
+    color: #111;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .fiverrCarousel .img {
+    display: block;
+    background-position: center;
+    background-size: cover;
+    height: 415px;
+  }
+  .fiverrCarousel .img .hero_Name {
+    position: absolute;
+    color: white;
+    bottom: 0;
+    right: 10%;
+  }
+  .fiverrCarousel .img .hero_Name .star {
+    color: #FFC100;
+  }
+  .fiverrCarousel .fiverrSearch {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    top: 130px;
+  }
+  .fiverrCarousel .fiverrSearch .container {
+    width: 85%;
+  }
+  .fiverrCarousel .fiverrSearch .container h1 {
+    line-height: 40px;
+    padding-bottom: 24px;
+    color: #fff;
+    font-size: 32px;
+    font-weight: 700;
+  }
+  .fiverrCarousel .fiverrSearch .container h1 i {
+    font-family: 'DomaineDisplay';
+    font-weight: 500;
+  }
+  .fiverrCarousel .fiverrSearch .container .input-group {
+    width: 100% !important;
+  }
+  .fiverrCarousel .fiverrSearch .container .input-group .form-control {
+    border-radius: .25rem;
+  }
+  .fiverrCarousel .fiverrSearch .container .input-group .btn {
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 4px 4px 4px 4px;
+  }
+  .fiverrCarousel .fiverrSearch .container .popular {
+    padding-top: 22px;
+    display: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .fiverrCarousel .fiverrSearch .container .popular ul {
+    display: flex;
+    width: 100%;
+    margin-left: 12px;
+    text-align: left;
+  }
+  .fiverrCarousel .fiverrSearch .container .popular ul li {
+    list-style: none;
+    margin-right: 15px;
+  }
+  .fiverrCarousel .fiverrSearch .container .popular ul li a {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: transparent;
+    line-height: 24px;
+    font-weight: 600;
+    color: #fff;
+    padding: 5px 12px 5px;
+    border: 1px solid #fff;
+    border-radius: 40px;
+    transition: .5s all;
+  }
+  .fiverrCarousel .fiverrSearch .container .popular ul li a:hover {
+    text-decoration: none;
+    background-color: #fff;
+    color: #111;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .fiverrCarousel .img {
+    display: block;
+    background-position: center;
+    background-size: cover;
+    max-height: 415px;
+  }
+  .fiverrCarousel .img .hero_Name {
+    position: absolute;
+    color: white;
+    bottom: 0;
+    right: 3% !important;
+  }
+  .fiverrCarousel .img .hero_Name .star {
+    color: #FFC100;
+  }
+  .fiverrCarousel .fiverrSearch {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    top: 130px;
+  }
+  .fiverrCarousel .fiverrSearch .container h1 {
+    line-height: 40px;
+    padding-bottom: 24px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+  }
+  .fiverrCarousel .fiverrSearch .container h1 i {
+    font-family: 'DomaineDisplay';
+    font-weight: 500;
+  }
+  .fiverrCarousel .fiverrSearch .container .input-group {
+    width: 100%;
+  }
+  .fiverrCarousel .fiverrSearch .container .input-group .form-control {
+    border-radius: .25rem;
+  }
+  .fiverrCarousel .fiverrSearch .container .input-group .btn {
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 4px 4px 4px 4px;
+  }
+  .fiverrCarousel .fiverrSearch .container .popular {
+    padding-top: 22px;
+    display: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .fiverrCarousel .fiverrSearch .container .popular ul {
+    display: flex;
+    width: 100%;
+    margin-left: 12px;
+    text-align: left;
+  }
+  .fiverrCarousel .fiverrSearch .container .popular ul li {
+    list-style: none;
+    margin-right: 15px;
+  }
+  .fiverrCarousel .fiverrSearch .container .popular ul li a {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: transparent;
+    line-height: 24px;
+    font-weight: 600;
+    color: #fff;
+    padding: 5px 12px 5px;
+    border: 1px solid #fff;
+    border-radius: 40px;
+    transition: .5s all;
+  }
+  .fiverrCarousel .fiverrSearch .container .popular ul li a:hover {
+    text-decoration: none;
+    background-color: #fff;
+    color: #111;
+  }
+}
+
+@media (max-width: 899px) {
+  .fiverrCarousel .img {
+    display: block;
+    background-position: center;
+    background-size: cover;
+  }
+  .fiverrCarousel .img .hero_Name {
+    display: none;
+    position: absolute;
+    color: white;
+    bottom: 10px;
+    right: 5%;
+  }
+  .fiverrCarousel .img .hero_Name .star {
+    color: #FFC100;
+  }
+  .fiverrCarousel .andrea {
+    background-image: none;
+    background-color: #023a15;
+  }
+  .fiverrCarousel .moon {
+    background-image: none;
+    background-color: #b64762;
+  }
+  .fiverrCarousel .ritika {
+    background-image: none;
+    background-color: #540e1f;
+  }
+  .fiverrCarousel .zach {
+    background-image: none;
+    background-color: #023a15;
+  }
+  .fiverrCarousel .gabrielle {
+    background-image: none;
+    background-color: #7d1a00;
+  }
+  .fiverrCarousel .fiverrSearch {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    top: 130px;
+  }
+  .fiverrCarousel .fiverrSearch .container {
+    width: 85%;
+  }
+  .fiverrCarousel .fiverrSearch .container h1 {
+    line-height: 40px;
+    padding-bottom: 24px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+  }
+  .fiverrCarousel .fiverrSearch .container h1 i {
+    font-family: 'DomaineDisplay';
+    font-weight: 500;
+  }
+  .fiverrCarousel .fiverrSearch .container .input-group {
+    width: 100%;
+  }
+  .fiverrCarousel .fiverrSearch .container .input-group .form-control {
+    border-radius: .25rem;
+  }
+  .fiverrCarousel .fiverrSearch .container .input-group .btn {
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 4px 4px 4px 4px;
+  }
+  .fiverrCarousel .fiverrSearch .container .popular {
+    padding-top: 22px;
+    display: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .fiverrCarousel .fiverrSearch .container .popular ul {
+    display: flex;
+    width: 100%;
+    margin-left: 12px;
+    text-align: left;
+  }
+  .fiverrCarousel .fiverrSearch .container .popular ul li {
+    list-style: none;
+    margin-right: 15px;
+  }
+  .fiverrCarousel .fiverrSearch .container .popular ul li a {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: transparent;
+    line-height: 24px;
+    font-weight: 600;
+    color: #fff;
+    padding: 5px 12px 5px;
+    border: 1px solid #fff;
+    border-radius: 40px;
+    transition: .5s all;
+  }
+  .fiverrCarousel .fiverrSearch .container .popular ul li a:hover {
+    text-decoration: none;
+    background-color: #fff;
+    color: #111;
+  }
+}
+
+@media (min-width: 900px) {
+  .fiverrCarousel .img {
+    display: block;
+    background-position: center;
+    background-size: cover;
+    max-height: 680px !important;
+  }
+  .fiverrCarousel .img .hero_Name {
+    position: absolute;
+    color: white;
+    bottom: 10px;
+    right: 3%;
+  }
+  .fiverrCarousel .img .hero_Name .star {
+    color: #FFC100;
+  }
+  .fiverrCarousel .fiverrSearch {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    top: 230px;
+  }
+  .fiverrCarousel .fiverrSearch .container h1 {
+    width: 80%;
+    line-height: 48px;
+    padding-bottom: 24px;
+    color: #fff;
+    font-size: 45px;
+    font-weight: 700;
+  }
+  .fiverrCarousel .fiverrSearch .container h1 i {
+    font-family: 'DomaineDisplay';
+    font-weight: 500;
+  }
+  .fiverrCarousel .fiverrSearch .container .input-group {
+    width: 82%;
+  }
+  .fiverrCarousel .fiverrSearch .container .input-group .form-control {
+    border-radius: 4px 0px 0px 4px;
+  }
+  .fiverrCarousel .fiverrSearch .container .input-group .btn {
+    margin-top: 0;
+    width: auto;
+    border-radius: 0px 4px 4px 0px;
+  }
+  .fiverrCarousel .fiverrSearch .container .popular {
+    padding-top: 22px;
+    display: flex;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .fiverrCarousel .fiverrSearch .container .popular ul {
+    display: flex;
+    width: 100%;
+    margin-left: 12px;
+    text-align: left;
+  }
+  .fiverrCarousel .fiverrSearch .container .popular ul li {
+    list-style: none;
+    margin-right: 15px;
+  }
+  .fiverrCarousel .fiverrSearch .container .popular ul li a {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: transparent;
+    line-height: 24px;
+    font-weight: 600;
+    color: #fff;
+    padding: 5px 12px 5px;
+    border: 1px solid #fff;
+    border-radius: 40px;
+    transition: .5s all;
+  }
+  .fiverrCarousel .fiverrSearch .container .popular ul li a:hover {
+    text-decoration: none;
+    background-color: #fff;
+    color: #111;
+  }
+}
+
+@media (min-width: 1500px) {
+  .fiverrCarousel .img {
+    display: block;
+    background-position: center;
+    background-size: cover;
+    max-height: 680px !important;
+  }
+  .fiverrCarousel .img .hero_Name {
+    position: absolute;
+    color: white;
+    bottom: 10px;
+    right: 5%;
+  }
+  .fiverrCarousel .img .hero_Name .star {
+    color: #FFC100;
+  }
+  .fiverrCarousel .fiverrSearch {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    top: 230px;
+  }
+  .fiverrCarousel .fiverrSearch .container h1 {
+    width: 80%;
+    line-height: 48px;
+    padding-bottom: 24px;
+    color: #fff;
+    font-size: 45px;
+    font-weight: 700;
+  }
+  .fiverrCarousel .fiverrSearch .container h1 i {
+    font-family: 'DomaineDisplay';
+    font-weight: 500;
+  }
+  .fiverrCarousel .fiverrSearch .container .input-group {
+    width: 82%;
+  }
+  .fiverrCarousel .fiverrSearch .container .input-group .form-control {
+    border-radius: 4px 0px 0px 4px;
+  }
+  .fiverrCarousel .fiverrSearch .container .input-group .btn {
+    margin-top: 0;
+    width: auto;
+    border-radius: 0px 4px 4px 0px;
+  }
+  .fiverrCarousel .fiverrSearch .container .popular {
+    padding-top: 22px;
+    display: flex;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .fiverrCarousel .fiverrSearch .container .popular ul {
+    display: flex;
+    width: 100%;
+    margin-left: 12px;
+    text-align: left;
+  }
+  .fiverrCarousel .fiverrSearch .container .popular ul li {
+    list-style: none;
+    margin-right: 15px;
+  }
+  .fiverrCarousel .fiverrSearch .container .popular ul li a {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: transparent;
+    line-height: 24px;
+    font-weight: 600;
+    color: #fff;
+    padding: 5px 12px 5px;
+    border: 1px solid #fff;
+    border-radius: 40px;
+    transition: .5s all;
+  }
+  .fiverrCarousel .fiverrSearch .container .popular ul li a:hover {
+    text-decoration: none;
+    background-color: #fff;
+    color: #111;
+  }
+}
+
+@media (min-width: 1550px) {
+  .fiverrCarousel .img {
+    display: block;
+    background-position: center;
+    background-size: cover;
+    max-height: 680px !important;
+  }
+  .fiverrCarousel .img .hero_Name {
+    position: absolute;
+    color: white;
+    bottom: 10px;
+    right: 5%;
+  }
+  .fiverrCarousel .img .hero_Name .star {
+    color: #FFC100;
+  }
+  .fiverrCarousel .fiverrSearch {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    top: 230px;
+  }
+  .fiverrCarousel .fiverrSearch .container h1 {
+    width: 80%;
+    line-height: 48px;
+    padding-bottom: 24px;
+    color: #fff;
+    font-size: 45px;
+    font-weight: 700;
+  }
+  .fiverrCarousel .fiverrSearch .container h1 i {
+    font-family: 'DomaineDisplay';
+    font-weight: 500;
+  }
+  .fiverrCarousel .fiverrSearch .container .input-group {
+    width: 82%;
+  }
+  .fiverrCarousel .fiverrSearch .container .input-group .form-control {
+    border-radius: 4px 0px 0px 4px;
+  }
+  .fiverrCarousel .fiverrSearch .container .input-group .btn {
+    margin-top: 0;
+    width: auto;
+    border-radius: 0px 4px 4px 0px;
+  }
+  .fiverrCarousel .fiverrSearch .container .popular {
+    padding-top: 22px;
+    display: flex;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .fiverrCarousel .fiverrSearch .container .popular ul {
+    display: flex;
+    width: 100%;
+    margin-left: 12px;
+    text-align: left;
+  }
+  .fiverrCarousel .fiverrSearch .container .popular ul li {
+    list-style: none;
+    margin-right: 15px;
+  }
+  .fiverrCarousel .fiverrSearch .container .popular ul li a {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: transparent;
+    line-height: 24px;
+    font-weight: 600;
+    color: #fff;
+    padding: 5px 12px 5px;
+    border: 1px solid #fff;
+    border-radius: 40px;
+    transition: .5s all;
+  }
+  .fiverrCarousel .fiverrSearch .container .popular ul li a:hover {
+    text-decoration: none;
+    background-color: #fff;
+    color: #111;
+  }
+}
+
+@media (min-width: 1600px) {
+  .fiverrCarousel .img {
+    display: block;
+    background-position: center;
+    background-size: cover;
+    max-height: 680px !important;
+  }
+  .fiverrCarousel .img .hero_Name {
+    position: absolute;
+    color: white;
+    bottom: 10px;
+    right: 5%;
+  }
+  .fiverrCarousel .img .hero_Name .star {
+    color: #FFC100;
+  }
+  .fiverrCarousel .fiverrSearch {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    top: 230px;
+  }
+  .fiverrCarousel .fiverrSearch .container h1 {
+    width: 80%;
+    line-height: 48px;
+    padding-bottom: 24px;
+    color: #fff;
+    font-size: 45px;
+    font-weight: 700;
+  }
+  .fiverrCarousel .fiverrSearch .container h1 i {
+    font-family: 'DomaineDisplay';
+    font-weight: 500;
+  }
+  .fiverrCarousel .fiverrSearch .container .input-group {
+    width: 82%;
+  }
+  .fiverrCarousel .fiverrSearch .container .input-group .form-control {
+    border-radius: 4px 0px 0px 4px;
+  }
+  .fiverrCarousel .fiverrSearch .container .input-group .btn {
+    margin-top: 0;
+    width: auto;
+    border-radius: 0px 4px 4px 0px;
+  }
+  .fiverrCarousel .fiverrSearch .container .popular {
+    padding-top: 22px;
+    display: flex;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .fiverrCarousel .fiverrSearch .container .popular ul {
+    display: flex;
+    width: 100%;
+    margin-left: 12px;
+    text-align: left;
+  }
+  .fiverrCarousel .fiverrSearch .container .popular ul li {
+    list-style: none;
+    margin-right: 15px;
+  }
+  .fiverrCarousel .fiverrSearch .container .popular ul li a {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: transparent;
+    line-height: 24px;
+    font-weight: 600;
+    color: #fff;
+    padding: 5px 12px 5px;
+    border: 1px solid #fff;
+    border-radius: 40px;
+    transition: .5s all;
+  }
+  .fiverrCarousel .fiverrSearch .container .popular ul li a:hover {
+    text-decoration: none;
+    background-color: #fff;
+    color: #111;
+  }
+}
+
+@media (min-width: 1650px) {
+  .fiverrCarousel .img {
+    display: block;
+    background-position: center;
+    background-size: cover;
+    max-height: 680px !important;
+  }
+  .fiverrCarousel .img .hero_Name {
+    position: absolute;
+    color: white;
+    bottom: 10px;
+    right: 8%;
+  }
+  .fiverrCarousel .img .hero_Name .star {
+    color: #FFC100;
+  }
+  .fiverrCarousel .fiverrSearch {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    top: 230px;
+  }
+  .fiverrCarousel .fiverrSearch .container h1 {
+    width: 80%;
+    line-height: 48px;
+    padding-bottom: 24px;
+    color: #fff;
+    font-size: 45px;
+    font-weight: 700;
+  }
+  .fiverrCarousel .fiverrSearch .container h1 i {
+    font-family: 'DomaineDisplay';
+    font-weight: 500;
+  }
+  .fiverrCarousel .fiverrSearch .container .input-group {
+    width: 82%;
+  }
+  .fiverrCarousel .fiverrSearch .container .input-group .form-control {
+    border-radius: 4px 0px 0px 4px;
+  }
+  .fiverrCarousel .fiverrSearch .container .input-group .btn {
+    margin-top: 0;
+    width: auto;
+    border-radius: 0px 4px 4px 0px;
+  }
+  .fiverrCarousel .fiverrSearch .container .popular {
+    padding-top: 22px;
+    display: flex;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .fiverrCarousel .fiverrSearch .container .popular ul {
+    display: flex;
+    width: 100%;
+    margin-left: 12px;
+    text-align: left;
+  }
+  .fiverrCarousel .fiverrSearch .container .popular ul li {
+    list-style: none;
+    margin-right: 15px;
+  }
+  .fiverrCarousel .fiverrSearch .container .popular ul li a {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: transparent;
+    line-height: 24px;
+    font-weight: 600;
+    color: #fff;
+    padding: 5px 12px 5px;
+    border: 1px solid #fff;
+    border-radius: 40px;
+    transition: .5s all;
+  }
+  .fiverrCarousel .fiverrSearch .container .popular ul li a:hover {
+    text-decoration: none;
+    background-color: #fff;
+    color: #111;
+  }
+}
+
+@media (min-width: 1700px) {
+  .fiverrCarousel .img {
+    display: block;
+    background-position: center;
+    background-size: cover;
+    max-height: 680px !important;
+  }
+  .fiverrCarousel .img .hero_Name {
+    position: absolute;
+    color: white;
+    bottom: 10px;
+    right: 10%;
+  }
+  .fiverrCarousel .img .hero_Name .star {
+    color: #FFC100;
+  }
+  .fiverrCarousel .fiverrSearch {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    top: 230px;
+  }
+  .fiverrCarousel .fiverrSearch .container h1 {
+    width: 80%;
+    line-height: 48px;
+    padding-bottom: 24px;
+    color: #fff;
+    font-size: 45px;
+    font-weight: 700;
+  }
+  .fiverrCarousel .fiverrSearch .container h1 i {
+    font-family: 'DomaineDisplay';
+    font-weight: 500;
+  }
+  .fiverrCarousel .fiverrSearch .container .input-group {
+    width: 82%;
+  }
+  .fiverrCarousel .fiverrSearch .container .input-group .form-control {
+    border-radius: 4px 0px 0px 4px;
+  }
+  .fiverrCarousel .fiverrSearch .container .input-group .btn {
+    margin-top: 0;
+    width: auto;
+    border-radius: 0px 4px 4px 0px;
+  }
+  .fiverrCarousel .fiverrSearch .container .popular {
+    padding-top: 22px;
+    display: flex;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .fiverrCarousel .fiverrSearch .container .popular ul {
+    display: flex;
+    width: 100%;
+    margin-left: 12px;
+    text-align: left;
+  }
+  .fiverrCarousel .fiverrSearch .container .popular ul li {
+    list-style: none;
+    margin-right: 15px;
+  }
+  .fiverrCarousel .fiverrSearch .container .popular ul li a {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: transparent;
+    line-height: 24px;
+    font-weight: 600;
+    color: #fff;
+    padding: 5px 12px 5px;
+    border: 1px solid #fff;
+    border-radius: 40px;
+    transition: .5s all;
+  }
+  .fiverrCarousel .fiverrSearch .container .popular ul li a:hover {
+    text-decoration: none;
+    background-color: #fff;
+    color: #111;
+  }
+}
+
+@media (min-width: 1750px) {
+  .fiverrCarousel .img {
+    display: block;
+    background-position: center;
+    background-size: cover;
+    max-height: 680px !important;
+  }
+  .fiverrCarousel .img .hero_Name {
+    position: absolute;
+    color: white;
+    bottom: 10px;
+    right: 11%;
+  }
+  .fiverrCarousel .img .hero_Name .star {
+    color: #FFC100;
+  }
+  .fiverrCarousel .fiverrSearch {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    top: 230px;
+  }
+  .fiverrCarousel .fiverrSearch .container h1 {
+    width: 80%;
+    line-height: 48px;
+    padding-bottom: 24px;
+    color: #fff;
+    font-size: 45px;
+    font-weight: 700;
+  }
+  .fiverrCarousel .fiverrSearch .container h1 i {
+    font-family: 'DomaineDisplay';
+    font-weight: 500;
+  }
+  .fiverrCarousel .fiverrSearch .container .input-group {
+    width: 82%;
+  }
+  .fiverrCarousel .fiverrSearch .container .input-group .form-control {
+    border-radius: 4px 0px 0px 4px;
+  }
+  .fiverrCarousel .fiverrSearch .container .input-group .btn {
+    margin-top: 0;
+    width: auto;
+    border-radius: 0px 4px 4px 0px;
+  }
+  .fiverrCarousel .fiverrSearch .container .popular {
+    padding-top: 22px;
+    display: flex;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .fiverrCarousel .fiverrSearch .container .popular ul {
+    display: flex;
+    width: 100%;
+    margin-left: 12px;
+    text-align: left;
+  }
+  .fiverrCarousel .fiverrSearch .container .popular ul li {
+    list-style: none;
+    margin-right: 15px;
+  }
+  .fiverrCarousel .fiverrSearch .container .popular ul li a {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: transparent;
+    line-height: 24px;
+    font-weight: 600;
+    color: #fff;
+    padding: 5px 12px 5px;
+    border: 1px solid #fff;
+    border-radius: 40px;
+    transition: .5s all;
+  }
+  .fiverrCarousel .fiverrSearch .container .popular ul li a:hover {
+    text-decoration: none;
+    background-color: #fff;
+    color: #111;
+  }
+}
+
+@media (min-width: 1800px) {
+  .fiverrCarousel .img {
+    display: block;
+    background-position: center;
+    background-size: cover;
+    max-height: 680px !important;
+  }
+  .fiverrCarousel .img .hero_Name {
+    position: absolute;
+    color: white;
+    bottom: 10px;
+    right: 14%;
+  }
+  .fiverrCarousel .img .hero_Name .star {
+    color: #FFC100;
+  }
+  .fiverrCarousel .fiverrSearch {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    top: 230px;
+  }
+  .fiverrCarousel .fiverrSearch .container h1 {
+    width: 80%;
+    line-height: 48px;
+    padding-bottom: 24px;
+    color: #fff;
+    font-size: 45px;
+    font-weight: 700;
+  }
+  .fiverrCarousel .fiverrSearch .container h1 i {
+    font-family: 'DomaineDisplay';
+    font-weight: 500;
+  }
+  .fiverrCarousel .fiverrSearch .container .input-group {
+    width: 82%;
+  }
+  .fiverrCarousel .fiverrSearch .container .input-group .form-control {
+    border-radius: 4px 0px 0px 4px;
+  }
+  .fiverrCarousel .fiverrSearch .container .input-group .btn {
+    margin-top: 0;
+    width: auto;
+    border-radius: 0px 4px 4px 0px;
+  }
+  .fiverrCarousel .fiverrSearch .container .popular {
+    padding-top: 22px;
+    display: flex;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .fiverrCarousel .fiverrSearch .container .popular ul {
+    display: flex;
+    width: 100%;
+    margin-left: 12px;
+    text-align: left;
+  }
+  .fiverrCarousel .fiverrSearch .container .popular ul li {
+    list-style: none;
+    margin-right: 15px;
+  }
+  .fiverrCarousel .fiverrSearch .container .popular ul li a {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: transparent;
+    line-height: 24px;
+    font-weight: 600;
+    color: #fff;
+    padding: 5px 12px 5px;
+    border: 1px solid #fff;
+    border-radius: 40px;
+    transition: .5s all;
+  }
+  .fiverrCarousel .fiverrSearch .container .popular ul li a:hover {
+    text-decoration: none;
+    background-color: #fff;
+    color: #111;
+  }
+}
+
+.trustBy {
+  background-color: #FAFAFA;
+}
+
+.trustBy .trusted-by {
+  margin-bottom: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.trustBy .trusted-by .trusted-by-text {
+  display: block;
+  padding-right: 30px;
+  color: #b5b6ba;
+  font-weight: 600;
+}
+
+.trustBy .trusted-by ul {
+  margin-top: 15px;
+  display: flex;
+}
+
+.trustBy .trusted-by ul li {
+  padding-right: 60px;
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  .trustBy {
+    background-color: #FAFAFA;
+  }
+  .trustBy .trusted-by .trusted-by-text {
+    display: none;
+    padding-right: 20px;
+    color: #b5b6ba;
+    font-weight: 600;
+  }
+  .trustBy .trusted-by ul {
+    margin-top: 15px;
+    display: flex;
+  }
+  .trustBy .trusted-by ul li {
+    padding-right: 20px;
+    display: flex;
+  }
+}
+
+.fiverrServices .services__Content {
+  margin-bottom: 96px;
+}
+
+.fiverrServices .services__Content h1 {
+  font-size: 30px;
+  line-height: 120%;
+  font-weight: 700;
+  color: #404145;
+  padding-bottom: 24px;
+}
+
+.fiverrServices .services__Content .card {
+  cursor: pointer;
+}
+
+.fiverrServices .services__Content .card .card-img-top {
+  transition: .3s all;
+}
+
+.fiverrServices .services__Content .card .card-img-top:hover {
+  opacity: .85;
+}
+
+.fiverrServices .services__Content .card .card-img-overlay {
+  padding: 0;
+  height: 1%;
+}
+
+.fiverrServices .services__Content .card h4 {
+  padding: 1.25rem;
+  color: white;
+  font-size: 24px;
+  line-height: 130%;
+  font-weight: 700;
+}
+
+.fiverrServices .services__Content .card h4 small {
+  display: block;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+@media (max-width: 599px) {
+  .fiverrServices .owl-nav .owl-prev {
+    left: -5.5%;
+    right: unset;
+  }
+  .fiverrServices .owl-nav .owl-next {
+    left: unset;
+    right: -5.5%;
+  }
+  .fiverrServices .container {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+  .fiverrServices .container .card img {
+    height: 345px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 599px) {
+  .fiverrServices .owl-nav .owl-prev {
+    left: -4%;
+    right: unset;
+  }
+  .fiverrServices .owl-nav .owl-next {
+    left: unset;
+    right: -4%;
+  }
+  .fiverrServices .container {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+  .fiverrServices .container .card img {
+    height: 345px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 799px) {
+  .fiverrServices .owl-nav .owl-prev {
+    left: -3%;
+    right: unset;
+  }
+  .fiverrServices .owl-nav .owl-next {
+    left: unset;
+    right: -3%;
+  }
+  .fiverrServices .container {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+  .fiverrServices .container .card img {
+    height: 345px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1059px) {
+  .fiverrServices .owl-nav .owl-prev {
+    left: -2%;
+    right: unset;
+  }
+  .fiverrServices .owl-nav .owl-next {
+    left: unset;
+    right: -2%;
+  }
+  .fiverrServices .container {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+  .fiverrServices .container .card img {
+    height: 345px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1238px) {
+  .fiverrServices .owl-nav .owl-prev {
+    left: -2%;
+    right: unset;
+  }
+  .fiverrServices .owl-nav .owl-next {
+    left: unset;
+    right: -2%;
+  }
+  .fiverrServices .container {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+  .fiverrServices .container .card img {
+    height: 345px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1462px) {
+  .fiverrServices .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .fiverrServices .container .card img {
+    height: 345px;
+    width: 100%;
+  }
+}
+
+.fiverrQuality {
+  background-color: #F1FDF7;
+  padding-top: 96px;
+  padding-bottom: 96px;
+  margin-bottom: 96px;
+}
+
+.fiverrQuality .fiverrQuality__Text h2 {
+  padding-bottom: 24px;
+  font-size: 32px;
+  line-height: 120%;
+  font-weight: 700;
+  color: #404145;
+  margin-bottom: 0;
+}
+
+.fiverrQuality .fiverrQuality__Text ul li {
+  list-style: none;
+}
+
+.fiverrQuality .fiverrQuality__Text ul li h6 {
+  color: #404145;
+  font-weight: 700;
+  line-height: 140%;
+  font-size: 18px;
+  padding-bottom: 8px;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 0;
+}
+
+.fiverrQuality .fiverrQuality__Text ul li h6 span {
+  width: 24px;
+  height: 24px;
+  fill: #7a7d85;
+  margin-right: 10px;
+  min-width: 24px;
+}
+
+.fiverrQuality .fiverrQuality__Text ul li h6 span svg {
+  float: left;
+  height: 100%;
+  width: 100%;
+}
+
+.fiverrQuality .fiverrQuality__Text ul li p {
+  margin-bottom: 0;
+  padding-bottom: 24px;
+  color: #62646a;
+  font-size: 19px;
+  line-height: 26px;
+}
+
+.fiverrQuality .video_fiverr {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.fiverrQuality .video_fiverr .picture__trailer {
+  position: relative;
+  cursor: pointer;
+}
+
+.fiverrQuality .video_fiverr .picture__trailer::after {
+  content: "";
+  display: inline-block;
+  background: url(../../img/desktop-play-button.c1196d6.png) no-repeat;
+  background-size: 80px;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  z-index: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.fiverrQuality .video_fiverr .picture__trailer img {
+  width: 100%;
+  height: 100%;
+}
+
+.fiverrQuality div#exampleModal {
+  padding-right: 0 !important;
+}
+
+.fiverrQuality .modal-dialog {
+  max-width: 100vh;
+}
+
+.fiverrQuality .modal-dialog .modal-content {
+  background-color: unset;
+  border: unset;
+}
+
+.fiverrQuality .modal-dialog .modal-content .modal-header {
+  border: unset;
+}
+
+.fiverrQuality .modal-dialog .modal-content .modal-header button {
+  color: white;
+  padding: 0rem 0rem;
+}
+
+.fiverrQuality .modal-dialog .modal-content .modal-header button:focus {
+  outline: none;
+}
+
+.fiverrQuality .modal-dialog .modal-content .modal-body {
+  border: unset;
+}
+
+.fiverrQuality .modal-dialog .modal-content .modal-footer {
+  border: unset;
+}
+
+@media (min-width: 600px) {
+  .fiverrQuality .fiverrQuality__Text {
+    padding-bottom: 48px;
+    padding-left: 11px;
+  }
+}
+
+@media (min-width: 900px) {
+  .fiverrQuality .fiverrQuality__Text {
+    padding-right: 2%;
+    padding-bottom: 0;
+  }
+}
+
+@media (min-width: 1160px) {
+  .fiverrQuality .fiverrQuality__Text {
+    padding-right: 23%;
+  }
+}
+
+.fiverrMarketplace .container {
+  padding: 24px 24px 24px;
+  padding-top: 0px;
+}
+
+.fiverrMarketplace .container h2 {
+  padding-bottom: 24px;
+  margin-bottom: 40px;
+  font-weight: 700;
+  color: #404145;
+  font-size: 30px;
+  line-height: 120%;
+}
+
+.fiverrMarketplace .container .fiverrMarketplace__item {
+  padding-bottom: 55px;
+  position: relative;
+}
+
+.fiverrMarketplace .container .fiverrMarketplace__item a {
+  text-decoration: none;
+  text-align: center;
+}
+
+.fiverrMarketplace .container .fiverrMarketplace__item a img {
+  display: block;
+  width: 48px;
+  margin: 0 auto 15px;
+}
+
+.fiverrMarketplace .container .fiverrMarketplace__item a p {
+  color: #222325;
+}
+
+.fiverrMarketplace .container .fiverrMarketplace__item a p:hover {
+  color: #222325;
+}
+
+.fiverrMarketplace .container .fiverrMarketplace__item a::after {
+  content: "";
+  position: absolute;
+  top: 45px;
+  text-align: center;
+  right: 50%;
+  transform: translateX(50%);
+  padding: 0 0 8px;
+  width: 48px;
+  border-bottom: 2px solid #c5c6c9;
+  transition: .2s all;
+}
+
+.fiverrMarketplace .container .fiverrMarketplace__item a:hover {
+  transition: .5s all;
+}
+
+.fiverrMarketplace .container .fiverrMarketplace__item a:hover::after {
+  padding: 0 45px 8px;
+  border-color: #1dbf73;
+}
+
+.fiverrBusiness {
+  background-color: #0d084d;
+  margin: 0 auto 48px;
+}
+
+.fiverrBusiness .container {
+  padding: 24px 24px 0px;
+}
+
+.fiverrBusiness .container .fiverrBusiness__Content {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+.fiverrBusiness .container .fiverrBusiness__Content small {
+  display: flex;
+  align-items: center;
+  padding-bottom: 32px;
+}
+
+.fiverrBusiness .container .fiverrBusiness__Content small .fiverr_business_logo {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 10px;
+}
+
+.fiverrBusiness .container .fiverrBusiness__Content small .new_logo {
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 3px 7px 2px;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 999px;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 1;
+  border: 1px solid #dadbdd;
+  background: #584aff;
+  border-color: #584aff;
+  text-transform: uppercase;
+}
+
+.fiverrBusiness .container .fiverrBusiness__Content h2 {
+  font-size: 32px;
+  line-height: 120%;
+  color: #fff;
+  font-weight: 700;
+}
+
+.fiverrBusiness .container .fiverrBusiness__Content h2 span i {
+  font-family: 'DomaineDisplay';
+}
+
+.fiverrBusiness .container .fiverrBusiness__Content .upgrade {
+  padding-bottom: 32px;
+  max-width: 450px;
+  color: #fff;
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 0;
+}
+
+.fiverrBusiness .container .fiverrBusiness__Content ul {
+  margin-bottom: 36px;
+  list-style: none;
+  max-width: 588px;
+}
+
+.fiverrBusiness .container .fiverrBusiness__Content ul li {
+  padding-bottom: 16px;
+}
+
+.fiverrBusiness .container .fiverrBusiness__Content ul li h6 {
+  color: #fff;
+  line-height: 140%;
+  font-size: 16px;
+  padding-bottom: 8px;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 0;
+}
+
+.fiverrBusiness .container .fiverrBusiness__Content ul li h6 span {
+  width: 24px;
+  height: 24px;
+  fill: #7a7d85;
+  margin-right: 10px;
+  min-width: 24px;
+}
+
+.fiverrBusiness .container .fiverrBusiness__Content ul li h6 span svg {
+  float: left;
+  height: 100%;
+  width: 100%;
+}
+
+.fiverrBusiness .container .fiverrBusiness__Content button {
+  border-radius: 4px 4px 4px 4px;
+}
+
+.fiverrBusiness .container .fiverrBusiness_img {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+@media (max-width: 600px) {
+  .fiverrBusiness .fiverrBusiness__Content {
+    padding-top: 48px !important;
+    padding-bottom: 0px !important;
+  }
+  .fiverrBusiness .fiverrBusiness_img {
+    padding-top: 0px !important;
+    margin-top: 32px !important;
+    padding-bottom: 48px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .fiverrBusiness .fiverrBusiness__Content {
+    padding-top: 48px !important;
+    padding-bottom: 0px !important;
+  }
+  .fiverrBusiness .fiverrBusiness_img {
+    padding-top: 0px !important;
+    margin-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
+}
+
+@media (min-width: 600px) {
+  .fiverrBusiness .fiverrBusiness__Content {
+    background-color: #0d084d;
+  }
+  .fiverrBusiness .fiverrBusiness__Content small {
+    display: flex;
+    align-items: center;
+    padding-bottom: 32px;
+  }
+  .fiverrBusiness .fiverrBusiness__Content small .fiverr_business_logo {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 10px;
+  }
+  .fiverrBusiness .fiverrBusiness__Content small .new_logo {
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 3px 7px 2px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 999px;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 1;
+    border: 1px solid #dadbdd;
+    background: #584aff;
+    border-color: #584aff;
+    text-transform: uppercase;
+  }
+  .fiverrBusiness .fiverrBusiness__Content h2 {
+    padding-bottom: 24px;
+    max-width: 449px;
+  }
+  .fiverrBusiness .fiverrBusiness__Content h2 span i {
+    font-family: 'DomaineDisplay';
+  }
+  .fiverrBusiness .fiverrBusiness__Content .upgrade {
+    padding-bottom: 32px;
+    max-width: 450px;
+    color: #fff;
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 0;
+  }
+  .fiverrBusiness .fiverrBusiness__Content ul {
+    margin-bottom: 48px;
+    list-style: none;
+    max-width: 588px;
+  }
+  .fiverrBusiness .fiverrBusiness__Content ul li {
+    padding-bottom: 12px;
+  }
+  .fiverrBusiness .fiverrBusiness__Content ul li h6 {
+    color: #fff;
+    line-height: 140%;
+    font-size: 16px;
+    padding-bottom: 8px;
+    display: flex;
+    align-items: flex-start;
+    padding-bottom: 0;
+  }
+  .fiverrBusiness .fiverrBusiness__Content ul li h6 span {
+    width: 24px;
+    height: 24px;
+    fill: #7a7d85;
+    margin-right: 10px;
+    min-width: 24px;
+  }
+  .fiverrBusiness .fiverrBusiness__Content ul li h6 span svg {
+    float: left;
+    height: 100%;
+    width: 100%;
+  }
+  .fiverrBusiness .fiverrBusiness__Content button {
+    border-radius: 4px 4px 4px 4px;
+  }
+}
+
+@media (min-width: 900px) {
+  .fiverrBusiness {
+    margin-bottom: 96px;
+  }
+  .fiverrBusiness .fiverrBusiness__Content {
+    background-color: #0d084d;
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+  .fiverrBusiness .fiverrBusiness__Content small {
+    display: flex;
+    align-items: center;
+    padding-bottom: 32px;
+  }
+  .fiverrBusiness .fiverrBusiness__Content small .fiverr_business_logo {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 10px;
+  }
+  .fiverrBusiness .fiverrBusiness__Content small .new_logo {
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 3px 7px 2px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 999px;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 1;
+    border: 1px solid #dadbdd;
+    background: #584aff;
+    border-color: #584aff;
+    text-transform: uppercase;
+  }
+  .fiverrBusiness .fiverrBusiness__Content h2 {
+    padding-bottom: 24px;
+    max-width: 449px;
+  }
+  .fiverrBusiness .fiverrBusiness__Content h2 span i {
+    font-family: 'DomaineDisplay';
+  }
+  .fiverrBusiness .fiverrBusiness__Content .upgrade {
+    padding-bottom: 32px;
+    max-width: 450px;
+    color: #fff;
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 0;
+  }
+  .fiverrBusiness .fiverrBusiness__Content ul {
+    margin-bottom: 48px;
+    list-style: none;
+    max-width: 588px;
+  }
+  .fiverrBusiness .fiverrBusiness__Content ul li h6 {
+    color: #fff;
+    line-height: 140%;
+    font-size: 16px;
+    padding-bottom: 8px;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 0;
+  }
+  .fiverrBusiness .fiverrBusiness__Content ul li h6 span {
+    width: 24px;
+    height: 24px;
+    fill: #7a7d85;
+    margin-right: 10px;
+    min-width: 24px;
+  }
+  .fiverrBusiness .fiverrBusiness__Content ul li h6 span svg {
+    float: left;
+    height: 100%;
+    width: 100%;
+  }
+  .fiverrBusiness .fiverrBusiness__Content button {
+    border-radius: 4px 4px 4px 4px;
+  }
+  .fiverrBusiness .fiverrBusiness_img {
+    padding-top: 96px;
+    padding-bottom: 96px;
+    margin-top: 0;
+  }
+  .fiverrBusiness .fiverrBusiness_img img {
+    width: calc(100% + 16px);
+    margin: 0 -16px 0 0;
+  }
+}
+
+@media (min-width: 1560px) {
+  .fiverrBusiness {
+    overflow: hidden;
+  }
+  .fiverrBusiness .fiverrBusiness__Content {
+    background-color: #0d084d;
+  }
+  .fiverrBusiness .fiverrBusiness__Content small {
+    display: flex;
+    align-items: center;
+    padding-bottom: 32px;
+  }
+  .fiverrBusiness .fiverrBusiness__Content small .fiverr_business_logo {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 10px;
+  }
+  .fiverrBusiness .fiverrBusiness__Content small .new_logo {
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 3px 7px 2px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 999px;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 1;
+    border: 1px solid #dadbdd;
+    background: #584aff;
+    border-color: #584aff;
+    text-transform: uppercase;
+  }
+  .fiverrBusiness .fiverrBusiness__Content h2 {
+    padding-bottom: 24px;
+    max-width: 449px;
+  }
+  .fiverrBusiness .fiverrBusiness__Content h2 span i {
+    font-family: 'DomaineDisplay';
+  }
+  .fiverrBusiness .fiverrBusiness__Content .upgrade {
+    padding-bottom: 32px;
+    max-width: 450px;
+    color: #fff;
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 0;
+  }
+  .fiverrBusiness .fiverrBusiness__Content ul {
+    margin-bottom: 48px;
+    list-style: none;
+    max-width: 588px;
+  }
+  .fiverrBusiness .fiverrBusiness__Content ul li h6 {
+    color: #fff;
+    line-height: 140%;
+    font-size: 16px;
+    padding-bottom: 8px;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 0;
+  }
+  .fiverrBusiness .fiverrBusiness__Content ul li h6 span {
+    width: 24px;
+    height: 24px;
+    fill: #7a7d85;
+    margin-right: 10px;
+    min-width: 24px;
+  }
+  .fiverrBusiness .fiverrBusiness__Content ul li h6 span svg {
+    float: left;
+    height: 100%;
+    width: 100%;
+  }
+  .fiverrBusiness .fiverrBusiness__Content button {
+    border-radius: 4px 4px 4px 4px;
+  }
+  .fiverrBusiness .fiverrBusiness_img img {
+    width: calc(100% + 140px) !important;
+    margin: 0 -140px -32px 0;
+  }
+}
+
+.fiverrFeedback .container {
+  padding: 24px 24px 48px;
+}
+
+.fiverrFeedback .container .card {
+  border: none;
+}
+
+.fiverrFeedback .container .card .fiverr__video {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.fiverrFeedback .container .card .fiverr__video img {
+  border-radius: 4px;
+}
+
+.fiverrFeedback .container .card .fiverr__video::after {
+  content: "";
+  display: inline-block;
+  background: url(/img/desktop-play-button.c1196d6.png) no-repeat;
+  background-size: 80px;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  z-index: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.fiverrFeedback .container .card .fiverrFeedback__content {
+  display: flex;
+  align-items: center;
+}
+
+.fiverrFeedback .container .card .fiverrFeedback__content .fiverrFeedback__item {
+  padding: 0 0px 0 40px;
+  max-width: 764px;
+}
+
+.fiverrFeedback .container .card .fiverrFeedback__content .fiverrFeedback__item h5 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #7a7d85;
+  padding-bottom: 16px;
+}
+
+.fiverrFeedback .container .card .fiverrFeedback__content .fiverrFeedback__item h5 .logo-item {
+  border-left: 1px solid #c5c6c9;
+  height: 36px;
+  margin-left: 16px;
+}
+
+.fiverrFeedback .container .card .fiverrFeedback__content .fiverrFeedback__item h5 .logo-item img {
+  width: unset;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 12px;
+  height: 36px;
+}
+
+.fiverrFeedback .container .card .fiverrFeedback__content .fiverrFeedback__item .font-feedback {
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.fiverrFeedback .container .card .fiverrFeedback__content .fiverrFeedback__item .font-feedback i {
+  color: #003912;
+  font-family: "DomaineDisplay";
+  font-weight: 500;
+}
+
+.fiverrFeedback .owl-prev, .fiverrFeedback .owl-next {
+  top: 40%;
+}
+
+.fiverrFeedback .owl-prev {
+  right: unset;
+  left: -1.9%;
+}
+
+.fiverrFeedback .owl-next {
+  right: -1.9%;
+  left: unset;
+}
+
+.fiverrFeedback .modal-dialog {
+  max-width: 100vh;
+}
+
+.fiverrFeedback .modal-dialog .modal-content {
+  background-color: unset;
+  border: unset;
+}
+
+.fiverrFeedback .modal-dialog .modal-content .modal-header {
+  border: unset;
+}
+
+.fiverrFeedback .modal-dialog .modal-content .modal-header button {
+  color: white;
+  padding: 0rem 0rem;
+}
+
+.fiverrFeedback .modal-dialog .modal-content .modal-header button:focus {
+  outline: none;
+}
+
+.fiverrFeedback .modal-dialog .modal-content .modal-body {
+  border: unset;
+}
+
+.fiverrFeedback .modal-dialog .modal-content .modal-footer {
+  border: unset;
+}
+
+@media (max-width: 600px) {
+  .fiverrFeedback .fiverrFeedback__item {
+    padding: 0 !important;
+  }
+  .fiverrFeedback .fiverrFeedback__item h5 span {
+    display: block;
+    border: 0 !important;
+    margin-left: 0 !important;
+  }
+  .fiverrFeedback .fiverrFeedback__item h5 span img {
+    margin-left: 0 !important;
+  }
+  .fiverrFeedback .owl-prev, .fiverrFeedback .owl-next {
+    top: 16.5% !important;
+  }
+  .fiverrFeedback .owl-prev {
+    right: unset;
+    left: -4.9% !important;
+  }
+  .fiverrFeedback .owl-next {
+    right: -4.9% !important;
+    left: unset;
+  }
+}
+
+@media (max-width: 991px) {
+  .fiverrFeedback .fiverrFeedback__item {
+    padding: 0 !important;
+  }
+  .fiverrFeedback .owl-prev, .fiverrFeedback .owl-next {
+    top: 16.5% !important;
+  }
+  .fiverrFeedback .owl-prev {
+    right: unset;
+    left: -2.9%;
+  }
+  .fiverrFeedback .owl-next {
+    right: -2.9%;
+    left: unset;
+  }
+  .fiverrFeedback .card-body {
+    padding-left: 0;
+  }
+}
+
+@media (min-width: 600px) {
+  .fiverrFeedback {
+    padding: 0 !important;
+  }
+  .fiverrFeedback .fiverrFeedback__item h5 {
+    font-size: 20px !important;
+  }
+  .fiverrFeedback .fiverrFeedback__item h5 span {
+    display: block;
+    border: 0 !important;
+    margin-left: 0 !important;
+  }
+  .fiverrFeedback .fiverrFeedback__item h5 span img {
+    margin-left: 0 !important;
+  }
+  .fiverrFeedback .owl-prev, .fiverrFeedback .owl-next {
+    top: 19.5%;
+  }
+  .fiverrFeedback .owl-prev {
+    right: unset;
+    left: -3%;
+  }
+  .fiverrFeedback .owl-next {
+    right: -3%;
+    left: unset;
+  }
+}
+
+@media (min-width: 900px) {
+  .fiverrFeedback .owl-prev, .fiverrFeedback .owl-next {
+    top: 40%;
+  }
+  .fiverrFeedback .owl-prev {
+    right: unset;
+    left: -1.9%;
+  }
+  .fiverrFeedback .owl-next {
+    right: -1.9%;
+    left: unset;
+  }
+}
+
+@media (min-width: 1120px) {
+  .fiverrFeedback .container .card .fiverrFeedback__content {
+    display: flex;
+    align-items: center;
+  }
+  .fiverrFeedback .container .card .fiverrFeedback__content .fiverrFeedback__item {
+    padding: 0 0px 0 40px;
+    max-width: 764px;
+  }
+  .fiverrFeedback .container .card .fiverrFeedback__content .fiverrFeedback__item h5 {
+    display: inline-block !important;
+    font-weight: 400;
+    color: #7a7d85;
+    padding-bottom: 16px;
+  }
+  .fiverrFeedback .container .card .fiverrFeedback__content .fiverrFeedback__item h5 .logo-item {
+    display: unset;
+    border-left: 1px solid #c5c6c9 !important;
+    height: 36px;
+    margin-left: 16px !important;
+  }
+  .fiverrFeedback .container .card .fiverrFeedback__content .fiverrFeedback__item h5 .logo-item img {
+    width: unset;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 12px !important;
+    height: 36px;
+  }
+  .fiverrFeedback .container .card .fiverrFeedback__content .fiverrFeedback__item .font-feedback {
+    font-size: 30px;
+    line-height: 44px;
+  }
+  .fiverrFeedback .container .card .fiverrFeedback__content .fiverrFeedback__item .font-feedback i {
+    color: #003912;
+    font-family: "DomaineDisplay";
+    font-weight: 500;
+  }
+  .fiverrFeedback .owl-prev, .fiverrFeedback .owl-next {
+    top: 40%;
+  }
+  .fiverrFeedback .owl-prev {
+    right: unset;
+    left: -1.9%;
+  }
+  .fiverrFeedback .owl-next {
+    right: -1.9%;
+    left: unset;
+  }
+}
+
+@media (min-width: 1480px) {
+  .fiverrFeedback .owl-prev, .fiverrFeedback .owl-next {
+    top: 39%;
+  }
+  .fiverrFeedback .owl-prev {
+    right: unset;
+    left: -2%;
+  }
+  .fiverrFeedback .owl-next {
+    right: -4%;
+    left: unset;
+  }
+}
+
+.fiverrFreelancers {
+  background-color: #f5f5f5;
+  margin: 0 auto 48px;
+}
+
+.fiverrFreelancers .container {
+  position: relative;
+  padding: 24px 24px 48px;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.fiverrFreelancers .container .fiverrFreelancers__content {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.fiverrFreelancers .container .fiverrFreelancers__content h2 {
+  padding-bottom: 20px;
+  font-weight: 700;
+  color: #404145;
+}
+
+.fiverrFreelancers .container .fiverrFreelancers__content .card {
+  width: 100%;
+  box-shadow: 0 0.14px 2.29266px rgba(0, 0, 0, 0.03231), 0 0.37px 4.42626px rgba(0, 0, 0, 0.04769), 0 3px 7px rgba(0, 0, 0, 0.09);
+}
+
+.fiverrFreelancers .container .fiverrFreelancers__content .card img {
+  transition: .3s all;
+  object-fit: cover;
+  height: 237px;
+  width: 100%;
+}
+
+.fiverrFreelancers .container .fiverrFreelancers__content .card img:hover {
+  opacity: .85;
+}
+
+.fiverrFreelancers .container .fiverrFreelancers__content .card .card-body {
+  display: flex;
+  padding: 16px 0 12px 16px;
+}
+
+.fiverrFreelancers .container .fiverrFreelancers__content .card .card-body a img {
+  display: unset;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.fiverrFreelancers .container .fiverrFreelancers__content .card .card-body span {
+  font-size: 14px;
+  line-height: 21px;
+  padding-left: 12px;
+  width: 100%;
+}
+
+.fiverrFreelancers .container .fiverrFreelancers__content .card .card-body span b {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: calc(100% - 12px);
+}
+
+.fiverrFreelancers .container .fiverrFreelancers__content .card .card-body span a {
+  color: #95979d;
+}
+
+.fiverrFreelancers .container .fiverrFreelancers__content .see_more {
+  color: #4a73e8;
+  display: block;
+  text-decoration: none;
+}
+
+.fiverrFreelancers .container .fiverrFreelancers__content .see_more::after {
+  content: "\f105";
+  font-family: FontAwesome;
+  padding-left: 8px;
+  display: inline-block;
+}
+
+.fiverrFreelancers .owl-prev, .fiverrFreelancers .owl-next {
+  top: 40%;
+}
+
+.fiverrFreelancers .owl-prev {
+  right: unset;
+  left: -1.9%;
+}
+
+.fiverrFreelancers .owl-next {
+  right: -1.9%;
+  left: unset;
+}
+
+@media (max-width: 600px) {
+  .fiverrFreelancers .owl-prev, .fiverrFreelancers .owl-next {
+    top: 40%;
+  }
+  .fiverrFreelancers .owl-prev {
+    right: unset;
+    left: -5%;
+  }
+  .fiverrFreelancers .owl-next {
+    right: -5%;
+    left: unset;
+  }
+}
+
+@media (min-width: 600px) {
+  .fiverrFreelancers {
+    margin-bottom: 80px;
+  }
+  .fiverrFreelancers .container {
+    margin: 0;
+    padding: 24px 24px 48px;
+  }
+  .fiverrFreelancers .container .fiverrFreelancers__content h2 {
+    font-size: 32px;
+    line-height: 120%;
+  }
+  .fiverrFreelancers .owl-prev, .fiverrFreelancers .owl-next {
+    top: 40%;
+  }
+  .fiverrFreelancers .owl-prev {
+    right: unset;
+    left: -3.4%;
+  }
+  .fiverrFreelancers .owl-next {
+    right: -3.4%;
+    left: unset;
+  }
+}
+
+@media (min-width: 900px) {
+  .fiverrFreelancers {
+    margin-bottom: 96px;
+  }
+  .fiverrFreelancers .fiverrFreelancers__content {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+  .fiverrFreelancers .fiverrFreelancers__content h2 {
+    padding-right: 180px;
+    padding-bottom: 20px;
+  }
+  .fiverrFreelancers .fiverrFreelancers__content .see_more {
+    position: absolute;
+    right: 25px;
+    top: 90px;
+  }
+  .fiverrFreelancers .owl-prev, .fiverrFreelancers .owl-next {
+    top: 40%;
+  }
+  .fiverrFreelancers .owl-prev {
+    right: unset;
+    left: -2%;
+  }
+  .fiverrFreelancers .owl-next {
+    right: -2%;
+    left: unset;
+  }
+}
+
+@media (max-width: 900px) {
+  .fiverrFreelancers .fiverrFreelancers__content .see_more {
+    padding-top: 16px !important;
+  }
+}
+
+@media (min-width: 1160px) {
+  .fiverrFreelancers .container {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  .fiverrFreelancers .container .fiverrFreelancers__content {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+  .fiverrFreelancers .container .fiverrFreelancers__content h2 {
+    padding-right: 180px;
+    padding-bottom: 20px;
+  }
+  .fiverrFreelancers .container .fiverrFreelancers__content .see_more {
+    padding: 16px;
+    padding-right: 0;
+  }
+  .fiverrFreelancers .owl-prev, .fiverrFreelancers .owl-next {
+    top: 40%;
+  }
+  .fiverrFreelancers .owl-prev {
+    right: unset;
+    left: -2%;
+  }
+  .fiverrFreelancers .owl-next {
+    right: -2%;
+    left: unset;
+  }
+}
+
+.fiverrGuides .container {
+  position: relative;
+  padding: 24px 24px 48px;
+}
+
+.fiverrGuides .container h2 {
+  margin: 0;
+  font-size: 28px;
+  line-height: 130%;
+  padding-bottom: 20px;
+  display: inline-block;
+  font-weight: 700;
+  color: #404145;
+}
+
+.fiverrGuides .container .fiverrGuides__items .card {
+  border: none;
+}
+
+.fiverrGuides .container .fiverrGuides__items .card img {
+  transition: .3s all;
+}
+
+.fiverrGuides .container .fiverrGuides__items .card .card-body {
+  padding: 0;
+}
+
+.fiverrGuides .container .fiverrGuides__items .card .card-body h6 {
+  line-height: 140%;
+  font-size: 16px;
+  font-weight: 700;
+  color: #404145;
+  margin: 0;
+}
+
+.fiverrGuides .container .fiverrGuides__items .card .card-body p {
+  color: #7a7d85;
+  margin-bottom: 0;
+}
+
+.fiverrGuides .container .fiverrGuides__items:hover img {
+  opacity: .85;
+}
+
+.fiverrGuides .container .see_more {
+  color: #4a73e8;
+  display: block;
+  text-decoration: none;
+}
+
+.fiverrGuides .container .see_more::after {
+  content: "\f105";
+  font-family: FontAwesome;
+  padding-left: 8px;
+  display: inline-block;
+}
+
+.fiverrGuides .container_second {
+  position: relative;
+  background-color: #45091B;
+  border-radius: 4px;
+}
+
+.fiverrGuides .container_second .signUp_text {
+  border-radius: 4px;
+  background-color: #45091b;
+  overflow: hidden;
+  padding: 48px 24px;
+}
+
+.fiverrGuides .container_second .signUp_text h2 {
+  font-size: 32px;
+  line-height: 120%;
+  font-size: 32px;
+  line-height: 40px;
+  color: #fff;
+  padding-bottom: 40px;
+  font-weight: 700;
+}
+
+.fiverrGuides .container_second .signUp_text h2 span i {
+  font-family: 'DomaineDisplay';
+  font-weight: 500;
+}
+
+.fiverrGuides .container_second .signUp_text button {
+  display: block;
+  border-radius: 4px;
+}
+
+@media (min-width: 600px) {
+  .fiverrGuides {
+    padding-bottom: 60px;
+  }
+  .fiverrGuides .container {
+    padding: 32px 32px 64px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .fiverrGuides .container h2 {
+    font-size: 32px;
+    line-height: 120%;
+  }
+  .fiverrGuides .container .card img {
+    margin-bottom: 16px;
+  }
+  .fiverrGuides .container .card .card-body h6 {
+    font-size: 18px;
+  }
+  .fiverrGuides .container .card .card-body p {
+    color: #7a7d85;
+  }
+  .fiverrGuides .container_second .signUp_text {
+    padding: 64px 32px;
+  }
+  .fiverrGuides .container_second .signUp_text h2 {
+    max-width: 560px;
+    font-size: 32px;
+    line-height: 120%;
+    font-size: 40px;
+    line-height: 56px;
+  }
+}
+
+@media (min-width: 900px) {
+  .fiverrGuides {
+    padding-bottom: 80px;
+  }
+  .fiverrGuides .container h2 {
+    padding-bottom: 24px;
+  }
+  .fiverrGuides .container .fiverrGuides__items .card .card-body h6 {
+    padding-bottom: 2px;
+  }
+  .fiverrGuides .container .fiverrGuides__items .card .card-body h6 p {
+    color: #7a7d85;
+  }
+  .fiverrGuides .container .see_more {
+    position: absolute;
+    right: 25px;
+    top: 20px;
+  }
+  .fiverrGuides .container_second {
+    background-color: none;
+  }
+  .fiverrGuides .container_second .signUp_text {
+    background-image: url(/img/bg-signup-1400-x1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 80px 32px;
+  }
+  .fiverrGuides .container_second .signUp_text h2 {
+    max-width: 650px;
+  }
+}
+
+@media (min-width: 1160px) {
+  .fiverrGuides .container {
+    padding: 24px 24px 48px;
+  }
+  .fiverrGuides .container .see_more {
+    padding: 16px;
+    padding-right: 0;
+  }
+  .fiverrGuides .container_second .signUp_text {
+    padding: 120px 96px;
+  }
+  .fiverrGuides .container_second .signUp_text h2 {
+    font-size: 48px;
+    line-height: 56px;
+  }
+}
+
+@media (max-width: 1160px) {
+  .fiverrGuides .container {
+    padding: 24px 19px 48px;
+  }
+  .fiverrGuides .container .see_more {
+    padding-top: 16px;
+  }
+}
+
+@media (max-width: 991px) {
+  .fiverrGuides .container .fiverrGuides__items {
+    margin-bottom: 32px;
+  }
+}
+
+footer {
+  border-top: 1px solid #e4e5e7;
+}
+
+footer .footer__first {
+  padding: 24px 24px 48px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin-bottom: 8px;
+}
+
+footer .footer__first .row {
+  border-bottom: 1px solid #e4e5e7;
+  display: none;
+}
+
+footer .footer__first .row h6 {
+  padding: 20px 0;
+  color: #404145;
+  margin: 0;
+  padding-top: 0;
+  font-weight: 700;
+}
+
+footer .footer__first .row ul li {
+  padding-bottom: 16px;
+  list-style: none;
+}
+
+footer .footer__first .row ul li a {
+  color: #7a7d85;
+  display: block;
+}
+
+footer .footer__first .row ul li a small {
+  color: #b5b6ba;
+  display: block;
+}
+
+footer .footer__first .panel-heading h4 {
+  padding-bottom: 20px;
+  margin: 0;
+}
+
+footer .footer__first .panel-heading h4 a {
+  color: #404145;
+  font-size: 16px;
+  line-height: 140%;
+  font-weight: 700;
+}
+
+footer .footer__first .panel-heading h4 a::before {
+  font-family: 'FontAwesome';
+  content: "\f105";
+  float: right;
+  transform: rotate(90deg);
+  transition: all 0.2s;
+}
+
+footer .footer__first .panel-heading h4 a:hover {
+  text-decoration: none;
+}
+
+footer .footer__first .panel-heading .panel-last {
+  padding-bottom: 0;
+}
+
+footer .footer__first .panel-body ul li {
+  list-style: none;
+  padding-bottom: 16px;
+}
+
+footer .footer__first .panel-body ul li a {
+  color: #7a7d85;
+}
+
+footer .footer__first .panel-heading.active a:before {
+  transform: rotate(-90deg);
+}
+
+footer .footer__second {
+  padding-top: 0px !important;
+  border-bottom: none;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+footer .footer__second .bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .footer__second .bottom .left {
+  padding: 16px 0 0;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+footer .footer__second .bottom .left .logo__text {
+  margin-bottom: 0;
+  font-size: 14px;
+}
+
+footer .footer__second .bottom .left .logo__text .copyright {
+  margin-left: 24px;
+  color: #b5b6ba;
+  line-height: 21px;
+}
+
+footer .footer__second .bottom .right {
+  padding: 16px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+footer .footer__second .bottom .right .social ul {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  padding-right: 32px;
+  display: flex;
+}
+
+footer .footer__second .bottom .right .social ul li {
+  margin-right: 24px;
+  list-style: none;
+}
+
+footer .footer__second .bottom .right .social ul li a {
+  display: flex;
+}
+
+footer .footer__second .bottom .right .social ul li a span {
+  width: 20px;
+  height: 20px;
+}
+
+footer .footer__second .bottom .right .social ul li a span svg {
+  fill: #7a7d85;
+}
+
+footer .footer__second .bottom .right .social ul li a:hover {
+  padding: 8px;
+  margin: -8px;
+  background-color: #efeff0;
+  border-radius: 50%;
+}
+
+footer .footer__second .bottom .right .seting {
+  display: flex;
+  align-items: center;
+}
+
+footer .footer__second .bottom .right .seting .seting__web {
+  display: flex;
+  align-items: center;
+}
+
+footer .footer__second .bottom .right .seting button {
+  color: #7a7d85;
+  font-weight: 600;
+  padding: 8px 12px;
+  background: none;
+  border: none;
+  float: left;
+}
+
+footer .footer__second .bottom .right .seting button span {
+  width: 16px;
+  height: 16px;
+  fill: #7a7d85;
+  padding-right: 8px;
+}
+
+footer .footer__second .bottom .right .seting button .text-language {
+  font-size: 14px;
+  color: #7a7d85;
+  font-weight: 600;
+}
+
+footer .footer__second .bottom .right .seting .cash {
+  font-size: 14px;
+}
+
+footer .footer__second .bottom .right .seting .language:hover, footer .footer__second .bottom .right .seting .cash:hover {
+  color: #404145;
+  background-color: #f5f5f5;
+  border-radius: 54px;
+}
+
+footer .footer__second .bottom .right .seting .language:hover svg, footer .footer__second .bottom .right .seting .cash:hover svg {
+  fill: #404145;
+}
+
+footer .footer__second .bottom .right .seting .people span:hover {
+  fill: #404145;
+}
+
+footer .footer__second .bottom .right .seting .people span:hover circle {
+  stroke: #efeff0;
+  fill: #efeff0;
+}
+
+@media (max-width: 900px) {
+  .footer__items {
+    flex-basis: 33.33333%;
+    max-width: 33.33333%;
+  }
+}
+
+@media (min-width: 600px) {
+  footer .container {
+    padding-top: 64px;
+    padding-bottom: 0;
+  }
+  footer .container .row {
+    display: flex !important;
+  }
+  footer .container .panel-group {
+    display: none;
+  }
+}
+
+@media (max-width: 599px) {
+  .footer__first {
+    border-bottom: 1px solid #e4e5e7;
+  }
+  .footer__second .bottom {
+    display: block !important;
+    justify-content: unset !important;
+  }
+  .footer__second .bottom .left, .footer__second .bottom .right {
+    display: block !important;
+    text-align: center !important;
+  }
+  .footer__second .bottom .left .logo__text, .footer__second .bottom .right .logo__text {
+    margin-top: 13px;
+  }
+  .footer__second .bottom .left .logo__text .copyright, .footer__second .bottom .right .logo__text .copyright {
+    margin-left: 0px !important;
+  }
+  .footer__second .bottom .social ul {
+    display: inline-flex !important;
+    padding-right: 0 !important;
+  }
+  .footer__second .bottom .social ul li {
+    margin-right: 35px !important;
+  }
+  .footer__second .bottom .social ul .last_items {
+    margin-right: 0px !important;
+  }
+  .footer__second .bottom .seting, .footer__second .bottom .people {
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 860px) {
+  .footer__second .bottom {
+    display: block !important;
+    justify-content: unset !important;
+  }
+  .footer__second .bottom .left, .footer__second .bottom .right {
+    justify-content: unset !important;
+  }
+}
+/*# sourceMappingURL=main.css.map */

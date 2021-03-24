@@ -1,0 +1,178 @@
+.fiverrServices{
+    .services__Content{
+        margin-bottom: 96px;
+        h1{
+            font-size: 30px;
+            line-height: 120%;
+            font-weight: 700;
+            color: #404145;
+            padding-bottom: 24px;
+        }
+        .card{
+            cursor: pointer;
+            .card-img-top{
+                transition: .3s all;
+                &:hover{
+                    opacity: .85;
+                }
+            }
+            .card-img-overlay{
+                padding: 0;
+                height: 1%;
+            }
+            h4{
+                padding: 1.25rem;
+                color: white;
+                font-size: 24px;
+                line-height: 130%;
+                font-weight: 700;
+                small{
+                    display: block;
+                    font-size: 14px;
+                    line-height: 20px;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}
+
+//ress
+@media (max-width: 599px){
+    .fiverrServices{
+        .owl-nav{
+            .owl-prev{
+                left: -5.5% ;
+                right: unset;
+            }
+            .owl-next{
+                left: unset;
+                right: -5.5%;
+            }
+        }
+        .container{
+            padding-right: 25px;
+            padding-left: 25px;
+            .card{
+                img{
+                    height: 345px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 599px){
+    .fiverrServices{
+        .owl-nav{
+            .owl-prev{
+                left: -4% ;
+                right: unset;
+            }
+            .owl-next{
+                left: unset;
+                right: -4%;
+            }
+        }
+        .container{
+            padding-right: 25px;
+            padding-left: 25px;
+            .card{
+                img{
+                    height: 345px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 799px){
+    .fiverrServices{
+        .owl-nav{
+            .owl-prev{
+                left: -3% ;
+                right: unset;
+            }
+            .owl-next{
+                left: unset;
+                right: -3%;
+            }
+        }
+        .container{
+            padding-right: 25px;
+            padding-left: 25px;
+            .card{
+                img{
+                    height: 345px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 1059px){
+    .fiverrServices{
+        .owl-nav{
+            .owl-prev{
+                left: -2% ;
+                right: unset;
+            }
+            .owl-next{
+                left: unset;
+                right: -2% ;
+            }
+        }
+        .container{
+            padding-right: 25px;
+            padding-left: 25px;
+            .card{
+                img{
+                    height: 345px;
+                    width: 100%;
+                    
+                }
+                
+            }
+        }
+    }
+}
+@media (min-width: 1238px){
+    .fiverrServices{
+        .owl-nav{
+            .owl-prev{
+                left: -2% ;
+                right: unset;
+            }
+            .owl-next{
+                left: unset;
+                right: -2% ;
+            }
+        }
+        .container{
+            padding-right: 25px;
+            padding-left: 25px;
+            .card{
+                img{
+                    height: 345px;
+                    width: 100%;
+                    
+                }
+                
+            }
+        }
+    }
+}
+@media (min-width: 1462px){
+    .fiverrServices{
+        .container{
+            padding-right: 15px;
+            padding-left: 15px;
+            .card{
+                img{
+                    height: 345px;
+                    width: 100%;       
+                }        
+            }
+        }
+    }
+}

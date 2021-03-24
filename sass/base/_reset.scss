@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+  // font: 400 16px/24px "Macan","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Macan";
+  @include styleText(#62646a, $fs-0, $fw-normal);
+
+}
+.container{
+  max-width: 1410px;
+  margin: 0 auto;
+  
+}
+svg{
+  vertical-align: text-bottom;
+}
+//res

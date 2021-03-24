@@ -1,0 +1,1105 @@
+.fiverrCarousel{
+    .img{
+        position: relative;
+        display: flex;
+        background-position: center;
+        background-size: auto;
+        height: 680px;
+        .hero_Name{
+            position: absolute;
+            color: white;
+            bottom: 10px;
+            right: 2%;
+            .star{
+                color: #FFC100;
+            }
+        }
+    }
+    .andrea{
+        background-image: url(../../img/bg-hero-1-1792-x1.jpg);
+    }
+    .moon{
+        background-image: url(../../img/bg-hero-2-1792-x1.jpg);
+    }
+    .ritika{
+        background-image: url(../../img/bg-hero-3-1792-x1.jpg);
+    }
+    .zach{
+        background-image: url(../../img/bg-hero-4-1792-x1.jpg);
+    }
+    .gabrielle{
+        background-image: url(../../img/bg-hero-5-1792-x1.jpg);
+    }
+    .fiverrSearch{
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        top: 240px;
+        h1{
+            
+            line-height: 3.5rem;
+            padding-bottom: 24px;
+            @include styleText($color-white-0,3.4rem,700);
+            i{
+                font-family: 'DomaineDisplay';
+                font-weight: 500;
+            }
+        }
+        .popular{
+            padding-top: 22px;
+            display: flex;
+            @include styleText($color-white-0, $fs-1, $fw-bold-0);
+            ul{
+                display: flex;
+                width: 100%;
+                margin-left: 12px;
+                text-align: left;
+                li{
+                    
+                    list-style: none;
+                    margin-right: 15px;
+                    a{
+                        @include styleText($color-white-0, $fs-1, $fw-bold-0);
+                        background-color: transparent;
+                        line-height: 24px;
+                        font-weight: 600;
+                        color: #fff;
+                        padding: 5px 12px 5px;
+                        border: 1px solid #fff;
+                        border-radius: 40px;
+                        transition: .5s all;
+                        &:hover{
+                            text-decoration: none;
+                            background-color: #fff;
+                            color: #111;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+//res
+@include responsive("small"){
+    .fiverrCarousel{
+        .img{
+            display: block;
+            background-position: center;
+            background-size: cover;
+            height: 320px !important;
+            
+        }
+        .fiverrSearch{
+            position: absolute;
+            z-index: 1;
+            width: 100%;
+            top: 130px;
+            .container{
+                width: 85%;
+                h1{
+                    
+                    line-height: 40px;
+                    padding-bottom: 24px;
+                    @include styleText($color-white-0,33px !important,700) ;
+                    i{
+                        font-family: 'DomaineDisplay';
+                        font-weight: 500;
+                    }
+                }
+                .input-group{
+                    .form-control{
+                        border-radius: .25rem;
+                    }
+                    .btn{
+                        margin-top: 10px;
+                        width: 100%;
+                        border-radius: 4px 4px 4px 4px;
+                    }
+                }
+                .popular{
+                    padding-top: 22px;
+                    display: none;
+                    @include styleText($color-white-0, $fs-1, $fw-bold-0);
+                    ul{
+                        display: flex;
+                        width: 100%;
+                        margin-left: 12px;
+                        text-align: left;
+                        li{
+                            
+                            list-style: none;
+                            margin-right: 15px;
+                            a{
+                                @include styleText($color-white-0, $fs-1, $fw-bold-0);
+                                background-color: transparent;
+                                line-height: 24px;
+                                font-weight: 600;
+                                color: #fff;
+                                padding: 5px 12px 5px;
+                                border: 1px solid #fff;
+                                border-radius: 40px;
+                                transition: .5s all;
+                                &:hover{
+                                    text-decoration: none;
+                                    background-color: #fff;
+                                    color: #111;
+                                }
+                            }
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@include responsive("medium"){
+    .fiverrCarousel{
+        .img{
+            display: block;
+            background-position: center;
+            background-size: cover;
+            height: 415px;
+            .hero_Name{
+                position: absolute;
+                color: white;
+                bottom: 0;
+                right: 10%;
+                .star{
+                    color: #FFC100;
+                }
+            }
+        }
+        .fiverrSearch{
+            position: absolute;
+            z-index: 1;
+            width: 100%;
+            top: 130px;
+            .container{
+                width: 85%;
+                h1{
+                    
+                    line-height: 40px;
+                    padding-bottom: 24px;
+                    @include styleText($color-white-0,32px,700);
+                    i{
+                        font-family: 'DomaineDisplay';
+                        font-weight: 500;
+                    }
+                }
+                .input-group{
+                    width: 100% !important;
+                    .form-control{
+                        border-radius: .25rem;
+                    }
+                    .btn{
+                        margin-top: 10px;
+                        width: 100%;
+                        border-radius: 4px 4px 4px 4px;
+                    }
+                }
+                .popular{
+                    padding-top: 22px;
+                    display: none;
+                    @include styleText($color-white-0, $fs-1, $fw-bold-0);
+                    ul{
+                        display: flex;
+                        width: 100%;
+                        margin-left: 12px;
+                        text-align: left;
+                        li{
+                            
+                            list-style: none;
+                            margin-right: 15px;
+                            a{
+                                @include styleText($color-white-0, $fs-1, $fw-bold-0);
+                                background-color: transparent;
+                                line-height: 24px;
+                                font-weight: 600;
+                                color: #fff;
+                                padding: 5px 12px 5px;
+                                border: 1px solid #fff;
+                                border-radius: 40px;
+                                transition: .5s all;
+                                &:hover{
+                                    text-decoration: none;
+                                    background-color: #fff;
+                                    color: #111;
+                                }
+                            }
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@include responsive("large"){
+    .fiverrCarousel{
+        .img{
+            display: block;
+            background-position: center;
+            background-size: cover;
+            max-height: 415px;
+            .hero_Name{
+                position: absolute;
+                color: white;
+                bottom: 0;
+                right: 3% !important;
+                .star{
+                    color: #FFC100;
+                }
+            }
+        }
+        .fiverrSearch{
+            position: absolute;
+            z-index: 1;
+            width: 100%;
+            top: 130px;
+            .container{
+                // width: 85%;
+                h1{
+                    
+                    line-height: 40px;
+                    padding-bottom: 24px;
+                    @include styleText($color-white-0,40px,700);
+                    i{
+                        font-family: 'DomaineDisplay';
+                        font-weight: 500;
+                    }
+                }
+                .input-group{
+                    width: 100% ;
+                    
+                    .form-control{
+                        border-radius: .25rem;
+                    }
+                    .btn{
+                        margin-top: 10px;
+                        width: 100%;
+                        border-radius: 4px 4px 4px 4px;
+                    }
+                }
+                .popular{
+                    padding-top: 22px;
+                    display: none;
+                    @include styleText($color-white-0, $fs-1, $fw-bold-0);
+                    ul{
+                        display: flex;
+                        width: 100%;
+                        margin-left: 12px;
+                        text-align: left;
+                        li{
+                            
+                            list-style: none;
+                            margin-right: 15px;
+                            a{
+                                @include styleText($color-white-0, $fs-1, $fw-bold-0);
+                                background-color: transparent;
+                                line-height: 24px;
+                                font-weight: 600;
+                                color: #fff;
+                                padding: 5px 12px 5px;
+                                border: 1px solid #fff;
+                                border-radius: 40px;
+                                transition: .5s all;
+                                &:hover{
+                                    text-decoration: none;
+                                    background-color: #fff;
+                                    color: #111;
+                                }
+                            }
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width:899px){
+    .fiverrCarousel{
+        .img{
+            display: block;
+            background-position: center;
+            background-size: cover;
+            // height: 680px;
+            .hero_Name{
+                display: none;
+                position: absolute;
+                color: white;
+                bottom: 10px;
+                right: 5%;
+                .star{
+                    color: #FFC100;
+                }
+            }
+        }
+        .andrea{
+            background-image: none;
+            background-color: #023a15;
+        }
+        .moon{
+            background-image: none;
+            background-color: #b64762;
+        }
+        .ritika{
+            background-image: none;
+            background-color: #540e1f;
+        }
+        .zach{
+            background-image: none;
+            background-color: #023a15;
+        }
+        .gabrielle{
+            background-image: none;
+            background-color: #7d1a00;
+        }
+        .fiverrSearch{
+            position: absolute;
+            z-index: 1;
+            width: 100%;
+            top: 130px;
+            .container{
+                width: 85%;
+                h1{
+                    
+                    line-height: 40px;
+                    padding-bottom: 24px;
+                    @include styleText($color-white-0,40px,700);
+                    i{
+                        font-family: 'DomaineDisplay';
+                        font-weight: 500;
+                    }
+                }
+                .input-group{
+                    width: 100% ;
+                    
+                    .form-control{
+                        border-radius: .25rem;
+                    }
+                    .btn{
+                        margin-top: 10px;
+                        width: 100%;
+                        border-radius: 4px 4px 4px 4px;
+                    }
+                }
+                .popular{
+                    padding-top: 22px;
+                    display: none;
+                    @include styleText($color-white-0, $fs-1, $fw-bold-0);
+                    ul{
+                        display: flex;
+                        width: 100%;
+                        margin-left: 12px;
+                        text-align: left;
+                        li{
+                            
+                            list-style: none;
+                            margin-right: 15px;
+                            a{
+                                @include styleText($color-white-0, $fs-1, $fw-bold-0);
+                                background-color: transparent;
+                                line-height: 24px;
+                                font-weight: 600;
+                                color: #fff;
+                                padding: 5px 12px 5px;
+                                border: 1px solid #fff;
+                                border-radius: 40px;
+                                transition: .5s all;
+                                &:hover{
+                                    text-decoration: none;
+                                    background-color: #fff;
+                                    color: #111;
+                                }
+                            }
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 900px){
+    .fiverrCarousel{
+        .img{
+            display: block;
+            background-position: center;
+            background-size: cover;
+            max-height: 680px !important;
+            .hero_Name{
+                position: absolute;
+                color: white;
+                bottom: 10px;
+                right: 3%;     
+                .star{
+                    color: #FFC100;
+                }
+            }
+        }
+        .fiverrSearch{
+            position: absolute;
+            z-index: 1;
+            width: 100%;
+            top: 230px;
+            .container{
+                // width: 80%;
+                // margin: 115px 130px;
+                h1{
+                    width: 80%;
+                    
+                    line-height: 48px;
+                    padding-bottom: 24px;
+                    @include styleText($color-white-0,45px,700);
+                    i{
+                        font-family: 'DomaineDisplay';
+                        font-weight: 500;
+                    }
+                }
+                .input-group{
+                    width: 82%;
+                    .form-control{
+                        border-radius: 4px 0px 0px 4px;
+                    }
+                    .btn{
+                        margin-top: 0;
+                        width: auto;
+                        border-radius: 0px 4px 4px 0px;
+                    }
+                }
+                .popular{
+                    padding-top: 22px;
+                    display: flex;
+                    @include styleText($color-white-0, $fs-1, $fw-bold-0);
+                    ul{
+                        display: flex;
+                        width: 100%;
+                        margin-left: 12px;
+                        text-align: left;
+                        li{
+                            
+                            list-style: none;
+                            margin-right: 15px;
+                            a{
+                                
+                                @include styleText($color-white-0, $fs-1, $fw-bold-0);
+                                background-color: transparent;
+                                line-height: 24px;
+                                font-weight: 600;
+                                color: #fff;
+                                padding: 5px 12px 5px;
+                                border: 1px solid #fff;
+                                border-radius: 40px;
+                                transition: .5s all;
+                                &:hover{
+                                    text-decoration: none;
+                                    background-color: #fff;
+                                    color: #111;
+                                }
+                            }
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 1500px){
+    .fiverrCarousel{
+        .img{
+            display: block;
+            background-position: center;
+            background-size: cover;
+            max-height: 680px !important;
+            .hero_Name{
+                position: absolute;
+                color: white;
+                bottom: 10px;
+                right: 5%;     
+                .star{
+                    color: #FFC100;
+                }
+            }
+        }
+        .fiverrSearch{
+            position: absolute;
+            z-index: 1;
+            width: 100%;
+            top: 230px;
+            .container{
+                // width: 80%;
+                // margin: 115px 130px;
+                h1{
+                    width: 80%;
+                    
+                    line-height: 48px;
+                    padding-bottom: 24px;
+                    @include styleText($color-white-0,45px,700);
+                    i{
+                        font-family: 'DomaineDisplay';
+                        font-weight: 500;
+                    }
+                }
+                .input-group{
+                    width: 82%;
+                    .form-control{
+                        border-radius: 4px 0px 0px 4px;
+                    }
+                    .btn{
+                        margin-top: 0;
+                        width: auto;
+                        border-radius: 0px 4px 4px 0px;
+                    }
+                }
+                .popular{
+                    padding-top: 22px;
+                    display: flex;
+                    @include styleText($color-white-0, $fs-1, $fw-bold-0);
+                    ul{
+                        display: flex;
+                        width: 100%;
+                        margin-left: 12px;
+                        text-align: left;
+                        li{
+                            
+                            list-style: none;
+                            margin-right: 15px;
+                            a{
+                                
+                                @include styleText($color-white-0, $fs-1, $fw-bold-0);
+                                background-color: transparent;
+                                line-height: 24px;
+                                font-weight: 600;
+                                color: #fff;
+                                padding: 5px 12px 5px;
+                                border: 1px solid #fff;
+                                border-radius: 40px;
+                                transition: .5s all;
+                                &:hover{
+                                    text-decoration: none;
+                                    background-color: #fff;
+                                    color: #111;
+                                }
+                            }
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 1550px){
+    .fiverrCarousel{
+        .img{
+            display: block;
+            background-position: center;
+            background-size: cover;
+            max-height: 680px !important;
+            .hero_Name{
+                position: absolute;
+                color: white;
+                bottom: 10px;
+                right: 5%;     
+                .star{
+                    color: #FFC100;
+                }
+            }
+        }
+        .fiverrSearch{
+            position: absolute;
+            z-index: 1;
+            width: 100%;
+            top: 230px;
+            .container{
+                // width: 80%;
+                // margin: 115px 130px;
+                h1{
+                    width: 80%;
+                    
+                    line-height: 48px;
+                    padding-bottom: 24px;
+                    @include styleText($color-white-0,45px,700);
+                    i{
+                        font-family: 'DomaineDisplay';
+                        font-weight: 500;
+                    }
+                }
+                .input-group{
+                    width: 82%;
+                    .form-control{
+                        border-radius: 4px 0px 0px 4px;
+                    }
+                    .btn{
+                        margin-top: 0;
+                        width: auto;
+                        border-radius: 0px 4px 4px 0px;
+                    }
+                }
+                .popular{
+                    padding-top: 22px;
+                    display: flex;
+                    @include styleText($color-white-0, $fs-1, $fw-bold-0);
+                    ul{
+                        display: flex;
+                        width: 100%;
+                        margin-left: 12px;
+                        text-align: left;
+                        li{
+                            
+                            list-style: none;
+                            margin-right: 15px;
+                            a{
+                                
+                                @include styleText($color-white-0, $fs-1, $fw-bold-0);
+                                background-color: transparent;
+                                line-height: 24px;
+                                font-weight: 600;
+                                color: #fff;
+                                padding: 5px 12px 5px;
+                                border: 1px solid #fff;
+                                border-radius: 40px;
+                                transition: .5s all;
+                                &:hover{
+                                    text-decoration: none;
+                                    background-color: #fff;
+                                    color: #111;
+                                }
+                            }
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 1600px){
+    .fiverrCarousel{
+        .img{
+            display: block;
+            background-position: center;
+            background-size: cover;
+            max-height: 680px !important;
+            .hero_Name{
+                position: absolute;
+                color: white;
+                bottom: 10px;
+                right: 5%;     
+                .star{
+                    color: #FFC100;
+                }
+            }
+        }
+        .fiverrSearch{
+            position: absolute;
+            z-index: 1;
+            width: 100%;
+            top: 230px;
+            .container{
+                // width: 80%;
+                // margin: 115px 130px;
+                h1{
+                    width: 80%;
+                    
+                    line-height: 48px;
+                    padding-bottom: 24px;
+                    @include styleText($color-white-0,45px,700);
+                    i{
+                        font-family: 'DomaineDisplay';
+                        font-weight: 500;
+                    }
+                }
+                .input-group{
+                    width: 82%;
+                    .form-control{
+                        border-radius: 4px 0px 0px 4px;
+                    }
+                    .btn{
+                        margin-top: 0;
+                        width: auto;
+                        border-radius: 0px 4px 4px 0px;
+                    }
+                }
+                .popular{
+                    padding-top: 22px;
+                    display: flex;
+                    @include styleText($color-white-0, $fs-1, $fw-bold-0);
+                    ul{
+                        display: flex;
+                        width: 100%;
+                        margin-left: 12px;
+                        text-align: left;
+                        li{
+                            
+                            list-style: none;
+                            margin-right: 15px;
+                            a{
+                                
+                                @include styleText($color-white-0, $fs-1, $fw-bold-0);
+                                background-color: transparent;
+                                line-height: 24px;
+                                font-weight: 600;
+                                color: #fff;
+                                padding: 5px 12px 5px;
+                                border: 1px solid #fff;
+                                border-radius: 40px;
+                                transition: .5s all;
+                                &:hover{
+                                    text-decoration: none;
+                                    background-color: #fff;
+                                    color: #111;
+                                }
+                            }
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 1650px){
+    .fiverrCarousel{
+        .img{
+            display: block;
+            background-position: center;
+            background-size: cover;
+            max-height: 680px !important;
+            .hero_Name{
+                position: absolute;
+                color: white;
+                bottom: 10px;
+                right: 8%;     
+                .star{
+                    color: #FFC100;
+                }
+            }
+        }
+        .fiverrSearch{
+            position: absolute;
+            z-index: 1;
+            width: 100%;
+            top: 230px;
+            .container{
+                // width: 80%;
+                // margin: 115px 130px;
+                h1{
+                    width: 80%;
+                    
+                    line-height: 48px;
+                    padding-bottom: 24px;
+                    @include styleText($color-white-0,45px,700);
+                    i{
+                        font-family: 'DomaineDisplay';
+                        font-weight: 500;
+                    }
+                }
+                .input-group{
+                    width: 82%;
+                    .form-control{
+                        border-radius: 4px 0px 0px 4px;
+                    }
+                    .btn{
+                        margin-top: 0;
+                        width: auto;
+                        border-radius: 0px 4px 4px 0px;
+                    }
+                }
+                .popular{
+                    padding-top: 22px;
+                    display: flex;
+                    @include styleText($color-white-0, $fs-1, $fw-bold-0);
+                    ul{
+                        display: flex;
+                        width: 100%;
+                        margin-left: 12px;
+                        text-align: left;
+                        li{
+                            
+                            list-style: none;
+                            margin-right: 15px;
+                            a{
+                                
+                                @include styleText($color-white-0, $fs-1, $fw-bold-0);
+                                background-color: transparent;
+                                line-height: 24px;
+                                font-weight: 600;
+                                color: #fff;
+                                padding: 5px 12px 5px;
+                                border: 1px solid #fff;
+                                border-radius: 40px;
+                                transition: .5s all;
+                                &:hover{
+                                    text-decoration: none;
+                                    background-color: #fff;
+                                    color: #111;
+                                }
+                            }
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 1700px){
+    .fiverrCarousel{
+        .img{
+            display: block;
+            background-position: center;
+            background-size: cover;
+            max-height: 680px !important;
+            .hero_Name{
+                position: absolute;
+                color: white;
+                bottom: 10px;
+                right: 10%;     
+                .star{
+                    color: #FFC100;
+                }
+            }
+        }
+        .fiverrSearch{
+            position: absolute;
+            z-index: 1;
+            width: 100%;
+            top: 230px;
+            .container{
+                // width: 80%;
+                // margin: 115px 130px;
+                h1{
+                    width: 80%;
+                    
+                    line-height: 48px;
+                    padding-bottom: 24px;
+                    @include styleText($color-white-0,45px,700);
+                    i{
+                        font-family: 'DomaineDisplay';
+                        font-weight: 500;
+                    }
+                }
+                .input-group{
+                    width: 82%;
+                    .form-control{
+                        border-radius: 4px 0px 0px 4px;
+                    }
+                    .btn{
+                        margin-top: 0;
+                        width: auto;
+                        border-radius: 0px 4px 4px 0px;
+                    }
+                }
+                .popular{
+                    padding-top: 22px;
+                    display: flex;
+                    @include styleText($color-white-0, $fs-1, $fw-bold-0);
+                    ul{
+                        display: flex;
+                        width: 100%;
+                        margin-left: 12px;
+                        text-align: left;
+                        li{
+                            
+                            list-style: none;
+                            margin-right: 15px;
+                            a{
+                                
+                                @include styleText($color-white-0, $fs-1, $fw-bold-0);
+                                background-color: transparent;
+                                line-height: 24px;
+                                font-weight: 600;
+                                color: #fff;
+                                padding: 5px 12px 5px;
+                                border: 1px solid #fff;
+                                border-radius: 40px;
+                                transition: .5s all;
+                                &:hover{
+                                    text-decoration: none;
+                                    background-color: #fff;
+                                    color: #111;
+                                }
+                            }
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 1750px){
+    .fiverrCarousel{
+        .img{
+            display: block;
+            background-position: center;
+            background-size: cover;
+            max-height: 680px !important;
+            .hero_Name{
+                position: absolute;
+                color: white;
+                bottom: 10px;
+                right: 11%;     
+                .star{
+                    color: #FFC100;
+                }
+            }
+        }
+        .fiverrSearch{
+            position: absolute;
+            z-index: 1;
+            width: 100%;
+            top: 230px;
+            .container{
+                // width: 80%;
+                // margin: 115px 130px;
+                h1{
+                    width: 80%;
+                    
+                    line-height: 48px;
+                    padding-bottom: 24px;
+                    @include styleText($color-white-0,45px,700);
+                    i{
+                        font-family: 'DomaineDisplay';
+                        font-weight: 500;
+                    }
+                }
+                .input-group{
+                    width: 82%;
+                    .form-control{
+                        border-radius: 4px 0px 0px 4px;
+                    }
+                    .btn{
+                        margin-top: 0;
+                        width: auto;
+                        border-radius: 0px 4px 4px 0px;
+                    }
+                }
+                .popular{
+                    padding-top: 22px;
+                    display: flex;
+                    @include styleText($color-white-0, $fs-1, $fw-bold-0);
+                    ul{
+                        display: flex;
+                        width: 100%;
+                        margin-left: 12px;
+                        text-align: left;
+                        li{
+                            
+                            list-style: none;
+                            margin-right: 15px;
+                            a{
+                                
+                                @include styleText($color-white-0, $fs-1, $fw-bold-0);
+                                background-color: transparent;
+                                line-height: 24px;
+                                font-weight: 600;
+                                color: #fff;
+                                padding: 5px 12px 5px;
+                                border: 1px solid #fff;
+                                border-radius: 40px;
+                                transition: .5s all;
+                                &:hover{
+                                    text-decoration: none;
+                                    background-color: #fff;
+                                    color: #111;
+                                }
+                            }
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 1800px){
+    .fiverrCarousel{
+        .img{
+            display: block;
+            background-position: center;
+            background-size: cover;
+            max-height: 680px !important;
+            .hero_Name{
+                position: absolute;
+                color: white;
+                bottom: 10px;
+                right: 14%;     
+                .star{
+                    color: #FFC100;
+                }
+            }
+        }
+        .fiverrSearch{
+            position: absolute;
+            z-index: 1;
+            width: 100%;
+            top: 230px;
+            .container{
+                // width: 80%;
+                // margin: 115px 130px;
+                h1{
+                    width: 80%;
+                    
+                    line-height: 48px;
+                    padding-bottom: 24px;
+                    @include styleText($color-white-0,45px,700);
+                    i{
+                        font-family: 'DomaineDisplay';
+                        font-weight: 500;
+                    }
+                }
+                .input-group{
+                    width: 82%;
+                    .form-control{
+                        border-radius: 4px 0px 0px 4px;
+                    }
+                    .btn{
+                        margin-top: 0;
+                        width: auto;
+                        border-radius: 0px 4px 4px 0px;
+                    }
+                }
+                .popular{
+                    padding-top: 22px;
+                    display: flex;
+                    @include styleText($color-white-0, $fs-1, $fw-bold-0);
+                    ul{
+                        display: flex;
+                        width: 100%;
+                        margin-left: 12px;
+                        text-align: left;
+                        li{
+                            
+                            list-style: none;
+                            margin-right: 15px;
+                            a{
+                                
+                                @include styleText($color-white-0, $fs-1, $fw-bold-0);
+                                background-color: transparent;
+                                line-height: 24px;
+                                font-weight: 600;
+                                color: #fff;
+                                padding: 5px 12px 5px;
+                                border: 1px solid #fff;
+                                border-radius: 40px;
+                                transition: .5s all;
+                                &:hover{
+                                    text-decoration: none;
+                                    background-color: #fff;
+                                    color: #111;
+                                }
+                            }
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

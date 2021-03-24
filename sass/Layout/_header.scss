@@ -1,0 +1,337 @@
+header{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    float: left;
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    padding-top: 15px;
+    .fixed-top {
+        z-index: 0;
+    }
+    nav{
+        background-color: white;
+        .menu-bars{
+            svg{
+                g{
+                fill: #404145;
+               }
+           }
+        }
+        .item-sub-menu{
+            margin-bottom: 0;
+            .item__menu{
+                padding-right: 34.8px;
+                a{
+                    color: #777;
+                    &:hover{
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+    .fiverrlogo, .fiverrNav{
+        #fiverr_logo_nav{
+            fill: white;
+        }
+        .trigger-icon{
+            fill: white;
+        }
+        .sub-nav-net{
+            fill: #404145;
+        }
+    }
+    .fiverrlogo{
+        svg{
+            cursor: pointer;
+            .sub-nav-logo{
+                fill: #404145 !important;
+            }
+        }
+    }
+    .fiverrNav{
+        padding-top: 3px;
+        ul{
+            display: flex;
+            
+            li{
+                // flex-grow: 1;
+                list-style: none;
+                a{
+                    @include styleText($color-white-0, $fs-0, $fw-bold-0);
+                    &:hover{
+                        text-decoration: none;
+                        
+                    }
+                }
+                .join{
+                    background: 0 0;
+                    color: #fff;
+                    font-weight: 700;
+                    border: 1px #fff solid;
+                    transition: background-color .2s;
+                    box-sizing: border-box;
+                    padding: 0px 20px;
+                    border-radius: 3px;
+                    font-size: 16px;
+                    &:hover{
+                        text-decoration: none;
+                        background-color: #1dbf73;
+                        border-color: #1dbf73;
+                    }
+                }
+            }
+        }
+    }
+    .sub-nav-menu{
+        ul{
+            li{
+                a{
+                    color: #62646a;
+                    &:hover{
+                        color: #1dbf73;
+                    }
+                }
+            }
+            .join-button{
+                a{
+                    color: #1dbf73;
+                    border-color: #1dbf73;
+                    &:hover{
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+//res
+@media (max-width: 575px){
+    header{
+        .fiverrlogo{
+            display: block !important;
+            justify-content: center !important;
+            // text-align: center;
+            // flex-grow: 10;
+            #fiverr_logo_nav{
+               fill: #404145 !important;
+            }
+        }
+    }
+}
+@media (max-width: 599px){
+    header{
+        nav{
+            display: none !important;
+            .btn-success{
+                display: none;
+            }
+        }
+        position: relative;
+        .menu-bars{
+            display: flex;
+            justify-content: flex-start !important;
+            padding-top: 5px;
+            // flex-grow: 1;
+            g{
+                fill: #404145 !important;
+            }
+        }
+        
+        .fiverrlogo{
+            display: flex !important;
+            justify-content: flex-end ;
+            // flex-grow: 10;
+            #fiverr_logo_nav{
+               fill: #404145 !important;
+            }
+        }
+        li{
+            display: none;
+        }
+        .signIn{
+            display: none !important;
+        }
+        .join-button{
+            display: flex;
+            justify-content: flex-end;
+            // flex-grow: 1;
+            a{  
+                padding: 0 !important;
+                color: #404145 !important;
+                border: none !important;
+                &:hover{
+                    background-color: transparent !important;
+                    border-color: transparent !important;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 767px){
+    header{
+        nav{
+            .menu-bars{
+                display: flex !important;
+                align-items: center !important;
+            }
+        }
+        .menu-bars{
+            display: flex;
+            justify-content: flex-end;
+            padding-top: 5px;
+            g{
+                fill: #fff;
+            }
+        }
+        .col-6{
+            padding-right: 0;
+            padding-left: 0;
+        }
+        .fiverrlogo{
+            display: flex;
+            // justify-content: flex-start;
+            #fiverr_logo_nav{
+               fill: #fff;
+            }
+        }
+        li{
+            display: none;
+        }
+        .join-button, .signIn{
+            display: flex;
+            a{ 
+                color: #fff;
+            }
+        }
+    }
+}
+@media (max-width: 899px){
+    header{
+        .menu-bars{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding-top: 7px;
+            g{
+                fill: #fff;
+            }
+        }
+        .col-6{
+            padding-right: 0;
+            padding-left: 0;
+        }
+        .fiverrlogo{
+            display: flex;
+            // justify-content: flex-start;
+            #fiverr_logo_nav{
+               fill: #fff;
+            }
+        }
+       ul{
+           display: flex;
+           justify-content: flex-end;
+        li{
+            display: none;
+            padding-left: 10px;
+        }
+        .join-button, .signIn{
+            display: flex;
+            justify-content: flex-end;
+            // float: right;
+            a{ 
+                color: #fff;
+                display: flex;
+                justify-content: flex-end;
+            }
+        }
+       }
+    }
+}
+@media (max-width: 991px){
+    .col-6{
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+@media (min-width: 900px){
+    header{
+        .menu-bars{
+            display: flex;
+            justify-content: flex-end;
+            padding-top: 7px;
+            g{
+                fill: #fff;
+            }
+        }
+        // .col-6{
+        //     padding-right: 0;
+        //     padding-left: 0;
+        // }
+        .fiverrlogo{
+            display: flex;
+            // justify-content: flex-start;
+            #fiverr_logo_nav{
+               fill: #fff;
+            }
+        }
+        ul{
+            display: flex;
+           justify-content: space-around;
+           li{
+            display: flex;
+            }
+            .english, .usd{
+                display: none;
+                a{ 
+                    color: #fff;
+                }
+            }
+        }
+    }   
+}
+@media (min-width: 1160px){
+    header{
+        .col-lg-1{
+            display: none;
+        }
+        .fiverrlogo{
+            display: flex;
+            #fiverr_logo_nav{
+               fill: #fff;
+            }
+        }
+        ul{
+        display: flex;
+           justify-content: space-around;
+           li{
+            display: flex;
+            }
+            .english, .usd{
+                display: flex;
+                a{ 
+                    color: #fff;
+                }
+            }
+        }
+    }   
+}
+@media (max-width: 1159px){
+    header{
+        nav{
+            // display: none !important;
+            .btn-success{
+                display: none;
+            }
+        }
+    }
+}
+@media (max-width: 1446px){
+   header{
+       .nav-res{
+           display: none !important;
+       }
+   }
+}

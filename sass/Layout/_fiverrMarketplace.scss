@@ -1,0 +1,53 @@
+.fiverrMarketplace{
+    .container{
+        padding: 24px 24px 24px;
+        padding-top: 0px;
+        h2{
+            padding-bottom: 24px;
+            margin-bottom: 40px;
+            font-weight: 700;
+            color: #404145;
+            font-size: 30px;
+            line-height: 120%;
+        }
+        .fiverrMarketplace__item{
+            padding-bottom: 55px;
+            position: relative;
+            a{
+                
+                text-decoration: none;
+                text-align: center;
+                img{
+                    display: block;
+                    width: 48px;
+                    margin: 0 auto 15px;
+                }
+                p{
+                    color: #222325;
+                    &:hover{
+                        color: #222325;
+                    }
+                }
+                &::after{
+                    content: "";
+                    position: absolute;
+                    top: 45px;
+                    text-align: center;
+                    right: 50%;
+                    transform: translateX(50%);
+                    padding: 0 0 8px;
+                    width: 48px;
+                    border-bottom: 2px solid #c5c6c9;
+                    transition: .2s all;
+                }
+                &:hover{
+                    transition: .5s all;
+                    &::after{
+                        padding: 0 45px 8px;
+                        border-color: #1dbf73;
+                    }
+                }
+            }
+        }
+    }
+}

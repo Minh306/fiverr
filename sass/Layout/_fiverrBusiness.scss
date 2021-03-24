@@ -1,0 +1,397 @@
+.fiverrBusiness{
+    background-color: #0d084d;
+    margin: 0 auto 48px;
+    .container{
+        padding: 24px 24px 0px;
+        .fiverrBusiness__Content{
+         padding-top: 96px;
+         padding-bottom: 96px;
+         small{
+             display: flex;
+             align-items: center;
+             padding-bottom: 32px;
+             .fiverr_business_logo{
+                 display: inline-block;
+                 vertical-align: top;
+                 margin-right: 10px;
+             }
+             .new_logo{
+                 box-sizing: border-box;
+                 display: inline-block;
+                 padding: 3px 7px 2px;
+                 border-width: 1px;
+                 border-style: solid;
+                 border-radius: 999px;
+                 text-decoration: none;
+                 text-align: center;
+                 color: #fff;
+                 font-size: 10px;
+                 font-weight: 700;
+                 line-height: 1;
+                 border: 1px solid #dadbdd;
+                 background: #584aff;
+                 border-color: #584aff;
+                 text-transform: uppercase;
+             }
+         }
+         h2{
+             
+             font-size: 32px;
+             line-height: 120%;
+             color: #fff;
+             font-weight: 700;
+             span{
+                 i{
+                     // font-family: 'Sansita Swashed', cursive;
+                     font-family: 'DomaineDisplay';
+                 }
+             }
+         }
+         .upgrade{
+             padding-bottom: 32px;
+             max-width: 450px;
+             color: #fff;
+             font-size: 18px;
+             line-height: 26px;
+             margin-bottom: 0;
+         }
+         ul{
+             margin-bottom: 36px;
+             list-style: none;
+             max-width: 588px;
+             li{
+                 padding-bottom: 16px;
+                 h6{
+                     color: #fff;
+                     line-height: 140%;
+                     font-size: 16px;
+                     padding-bottom: 8px;
+                     display: flex;
+                     align-items: flex-start;
+                     margin-bottom: 0;
+                     span{
+                         width: 24px;
+                         height: 24px;
+                         fill: rgb(122, 125, 133);
+                         margin-right: 10px;
+                         min-width: 24px;
+                         svg{
+                             float: left;
+                             height: 100%;
+                             width: 100%;
+                         }
+                     }
+                 }
+             }
+         }
+         button{
+             border-radius: 4px 4px 4px 4px;
+         }
+        }
+        .fiverrBusiness_img{
+             padding-top: 96px;
+             padding-bottom: 96px;
+        }
+    }
+}
+//res
+@media (max-width:600px){
+    .fiverrBusiness{
+        .fiverrBusiness__Content{
+            padding-top: 48px !important;
+            padding-bottom: 0px !important;
+        }
+        .fiverrBusiness_img{
+            padding-top: 0px !important;
+            margin-top: 32px !important;
+            padding-bottom: 48px !important;
+        }
+    }
+}
+@media (max-width:767px){
+    .fiverrBusiness{
+
+        .fiverrBusiness__Content{
+            padding-top: 48px !important;
+            padding-bottom: 0px !important;
+        }
+        .fiverrBusiness_img{
+            padding-top: 0px !important;
+            margin-top: 48px !important;
+            padding-bottom: 48px !important;
+        }
+    }
+}
+//
+@media (min-width:600px){
+    .fiverrBusiness{
+        .fiverrBusiness__Content{
+         background-color: #0d084d;
+         small{
+             display: flex;
+             align-items: center;
+             padding-bottom: 32px;
+             .fiverr_business_logo{
+                 display: inline-block;
+                 vertical-align: top;
+                 margin-right: 10px;
+             }
+             .new_logo{
+                 box-sizing: border-box;
+                 display: inline-block;
+                 padding: 3px 7px 2px;
+                 border-width: 1px;
+                 border-style: solid;
+                 border-radius: 999px;
+                 text-decoration: none;
+                 text-align: center;
+                 color: #fff;
+                 font-size: 10px;
+                 font-weight: 700;
+                 line-height: 1;
+                 border: 1px solid #dadbdd;
+                 background: #584aff;
+                 border-color: #584aff;
+                 text-transform: uppercase;
+             }
+         }
+         h2{
+             padding-bottom: 24px;
+             max-width: 449px;
+             span{
+                 i{
+                     // font-family: 'Sansita Swashed', cursive;
+                     font-family: 'DomaineDisplay';
+                 }
+             }
+         }
+         .upgrade{
+             padding-bottom: 32px;
+             max-width: 450px;
+             color: #fff;
+             font-size: 18px;
+             line-height: 26px;
+             margin-bottom: 0;
+         }
+         ul{
+             margin-bottom: 48px;
+             list-style: none;
+             max-width: 588px;
+             li{
+                padding-bottom: 12px;
+                 h6{
+                     color: #fff;
+                     line-height: 140%;
+                     font-size: 16px;
+                     padding-bottom: 8px;
+                     display: flex;
+                     align-items: flex-start;
+                     padding-bottom: 0;
+                     span{
+                         width: 24px;
+                         height: 24px;
+                         fill: rgb(122, 125, 133);
+                         margin-right: 10px;
+                         min-width: 24px;
+                         svg{
+                             float: left;
+                             height: 100%;
+                             width: 100%;
+                         }
+                     }
+                 }
+             }
+         }
+         button{
+             border-radius: 4px 4px 4px 4px;
+         }
+        }
+     }
+}
+@media (min-width:900px){   
+    .fiverrBusiness{
+        margin-bottom: 96px;
+       .fiverrBusiness__Content{
+        background-color: #0d084d;
+        padding-top: 96px;
+        padding-bottom: 96px;
+        small{
+            display: flex;
+            align-items: center;
+            padding-bottom: 32px;
+            .fiverr_business_logo{
+                display: inline-block;
+                vertical-align: top;
+                margin-right: 10px;
+            }
+            .new_logo{
+                box-sizing: border-box;
+                display: inline-block;
+                padding: 3px 7px 2px;
+                border-width: 1px;
+                border-style: solid;
+                border-radius: 999px;
+                text-decoration: none;
+                text-align: center;
+                color: #fff;
+                font-size: 10px;
+                font-weight: 700;
+                line-height: 1;
+                border: 1px solid #dadbdd;
+                background: #584aff;
+                border-color: #584aff;
+                text-transform: uppercase;
+            }
+        }
+        h2{
+            padding-bottom: 24px;
+            max-width: 449px;
+            span{
+                i{
+                    // font-family: 'Sansita Swashed', cursive;
+                    font-family: 'DomaineDisplay';
+                }
+            }
+        }
+        .upgrade{
+            padding-bottom: 32px;
+            max-width: 450px;
+            color: #fff;
+            font-size: 18px;
+            line-height: 26px;
+            margin-bottom: 0;
+        }
+        ul{
+            margin-bottom: 48px;
+            list-style: none;
+            max-width: 588px;
+            li{
+                h6{
+                    color: #fff;
+                    line-height: 140%;
+                    font-size: 16px;
+                    padding-bottom: 8px;
+                    display: flex;
+                    align-items: flex-start;
+                    margin-bottom: 0;
+                    span{
+                        width: 24px;
+                        height: 24px;
+                        fill: rgb(122, 125, 133);
+                        margin-right: 10px;
+                        min-width: 24px;
+                        svg{
+                            float: left;
+                            height: 100%;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+        button{
+            border-radius: 4px 4px 4px 4px;
+        }
+       }
+       .fiverrBusiness_img{
+        padding-top: 96px;
+        padding-bottom: 96px;
+        margin-top: 0; 
+            img{
+                width: calc(100% + 16px);
+                margin: 0 -16px 0 0;
+            }
+        }
+    }
+}
+@media (min-width:1560px){
+    .fiverrBusiness{
+        overflow: hidden;
+        .fiverrBusiness__Content{
+         background-color: #0d084d;
+         small{
+             display: flex;
+             align-items: center;
+             padding-bottom: 32px;
+             .fiverr_business_logo{
+                 display: inline-block;
+                 vertical-align: top;
+                 margin-right: 10px;
+             }
+             .new_logo{
+                 box-sizing: border-box;
+                 display: inline-block;
+                 padding: 3px 7px 2px;
+                 border-width: 1px;
+                 border-style: solid;
+                 border-radius: 999px;
+                 text-decoration: none;
+                 text-align: center;
+                 color: #fff;
+                 font-size: 10px;
+                 font-weight: 700;
+                 line-height: 1;
+                 border: 1px solid #dadbdd;
+                 background: #584aff;
+                 border-color: #584aff;
+                 text-transform: uppercase;
+             }
+         }
+         h2{
+             padding-bottom: 24px;
+             max-width: 449px;
+             span{
+                 i{
+                     // font-family: 'Sansita Swashed', cursive;
+                     font-family: 'DomaineDisplay';
+                 }
+             }
+         }
+         .upgrade{
+             padding-bottom: 32px;
+             max-width: 450px;
+             color: #fff;
+             font-size: 18px;
+             line-height: 26px;
+             margin-bottom: 0;
+         }
+         ul{
+             margin-bottom: 48px;
+             list-style: none;
+             max-width: 588px;
+             li{
+                 h6{
+                     color: #fff;
+                     line-height: 140%;
+                     font-size: 16px;
+                     padding-bottom: 8px;
+                     display: flex;
+                     align-items: flex-start;
+                     margin-bottom: 0;
+                     span{
+                         width: 24px;
+                         height: 24px;
+                         fill: rgb(122, 125, 133);
+                         margin-right: 10px;
+                         min-width: 24px;
+                         svg{
+                             float: left;
+                             height: 100%;
+                             width: 100%;
+                         }
+                     }
+                 }
+             }
+         }
+         button{
+             border-radius: 4px 4px 4px 4px;
+         }
+        }
+        .fiverrBusiness_img{
+             img{
+                width: calc(100% + 140px) !important;
+                margin: 0 -140px -32px 0;
+             }
+         }
+     }
+}

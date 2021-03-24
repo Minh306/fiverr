@@ -1,0 +1,208 @@
+.fiverrFreelancers{
+    background-color: #f5f5f5;
+    margin: 0 auto 48px;
+    .container{
+        position: relative;
+        padding: 24px 24px 48px;
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+        .fiverrFreelancers__content{
+            padding-top: 48px;
+            padding-bottom: 48px;
+            h2{
+                padding-bottom: 20px;
+                font-weight: 700;
+                color: #404145
+            }
+            .card{
+                width: 100%;
+                box-shadow: 0 0.14px 2.29266px rgba(0,0,0,.03231), 0 0.37px 4.42626px rgba(0,0,0,.04769), 0 3px 7px rgba(0,0,0,.09);
+                img{
+                    transition: .3s all;
+                    object-fit: cover;
+                    height: 237px;
+                    width: 100%;
+                    &:hover{
+                        opacity: .85;
+                    }
+                }
+                .card-body{
+                    display: flex;
+                    padding: 16px 0 12px 16px;
+                    a{
+                        img{
+                            display: unset;
+                            height: 40px;
+                            width: 40px;
+                            border-radius: 50%;
+                        }
+                    }
+                    span{
+                        font-size: 14px;
+                        line-height: 21px;
+                        padding-left: 12px;
+                        width: 100%;
+                        b{
+                            display: block;
+                            overflow: hidden;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                            width: calc(100% - 12px);
+                        }
+                        a{
+                            color: #95979d;
+                        }
+                    }
+                }
+            }
+            .see_more{
+                color: #4a73e8;
+                display: block;
+                text-decoration: none;
+                &::after{
+                    content: "\f105";
+                    font-family: FontAwesome;
+                    padding-left: 8px;
+                    display: inline-block;
+                }
+            }
+        }
+    }
+    .owl-prev, .owl-next {
+        top: 40%;
+    }
+    .owl-prev {
+        right: unset;
+        left: -1.9%;
+    }
+    .owl-next {
+        right: -1.9%;
+        left: unset;
+    }
+}
+//res
+@media (max-width:600px){
+    .fiverrFreelancers{
+        
+        .owl-prev, .owl-next {
+            top: 40%;
+        }
+        .owl-prev {
+            right: unset;
+            left: -5%;
+        }
+        .owl-next {
+            right: -5%;
+            left: unset;
+        }
+    }
+}
+@media (min-width:600px){
+    .fiverrFreelancers{
+        margin-bottom: 80px;
+        .container{
+            margin: 0;
+            padding: 24px 24px 48px;
+            .fiverrFreelancers__content{
+                h2{
+                    font-size: 32px;
+                    line-height: 120%;
+                }
+               
+            }
+        }
+        .owl-prev, .owl-next {
+            top: 40%;
+        }
+        .owl-prev {
+            right: unset;
+            left: -3.4%;
+        }
+        .owl-next {
+            right: -3.4%;
+            left: unset;
+        }
+    }
+}
+@media (min-width:900px){
+    .fiverrFreelancers{
+        margin-bottom: 96px;
+        .fiverrFreelancers__content{
+            padding-top: 64px;
+            padding-bottom: 64px;
+            h2{
+                padding-right: 180px;
+                padding-bottom: 20px;
+            }
+            .see_more{
+                position: absolute;
+                right: 25px;
+                top: 90px;
+                
+            }
+        }
+        .owl-prev, .owl-next {
+            top: 40%;
+        }
+        .owl-prev {
+            right: unset;
+            left: -2%;
+        }
+        .owl-next {
+            right: -2%;
+            left: unset;
+        }
+    }
+}
+@media (max-width:900px){
+    .fiverrFreelancers{
+        .fiverrFreelancers__content{
+            .see_more{
+                padding-top: 16px !important;
+            }
+        }
+    }
+}
+@media (min-width:1160px){
+    .fiverrFreelancers{
+        .container{
+            max-width: 1400px;
+            margin: 0 auto;
+            .fiverrFreelancers__content{
+                padding-top: 96px;
+                padding-bottom: 96px;
+                h2{
+                    padding-right: 180px;
+                    padding-bottom: 20px;
+                    
+                }
+                .see_more{
+                    padding: 16px;
+                    padding-right: 0;
+                }
+            }
+        }
+        .owl-prev, .owl-next {
+            top: 40%;
+        }
+        .owl-prev {
+            right: unset;
+            left: -2%;
+        }
+        .owl-next {
+            right: -2%;
+            left: unset;
+        }
+    }
+}
+@media (max-width:1160px){
+    .fiverrFreelancers{
+        .container{
+            .fiverrFreelancers__content{
+               .see_more{
+                // padding-top: 0px;
+               }
+            }
+        }
+    }
+}

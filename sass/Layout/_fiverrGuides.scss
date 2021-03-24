@@ -1,0 +1,211 @@
+.fiverrGuides{
+    .container{
+        position: relative;
+        padding: 24px 24px 48px;
+        
+        h2{
+            margin: 0;
+            font-size: 28px;
+            line-height: 130%;
+            padding-bottom: 20px;
+            display: inline-block;
+            font-weight: 700;
+            color: #404145;
+        }
+        .fiverrGuides__items{
+            
+            .card{
+                border: none;
+                
+                img{
+                    transition: .3s all;
+                }
+                .card-body{
+                    padding: 0;
+                    h6{
+                        line-height: 140%;
+                        font-size: 16px;
+                        font-weight: 700;
+                        color: #404145;
+                        margin: 0;
+                    }
+                    p{
+                        color: #7a7d85;
+                        margin-bottom: 0;
+                    }
+                }
+            }
+            &:hover{
+                img{
+                    opacity: .85;
+                }
+            }
+        }
+        .see_more{
+            color: #4a73e8;
+            display: block;
+            text-decoration: none;
+            &::after{
+                content: "\f105";
+                font-family: FontAwesome;
+                padding-left: 8px;
+                display: inline-block;
+            }
+        }
+    }
+    .container_second{
+        position: relative;
+        background-color: #45091B;
+        border-radius: 4px;
+        
+        .signUp_text{
+            
+            border-radius: 4px;
+            background-color: #45091b;
+            overflow: hidden;
+            padding: 48px 24px;
+            h2{
+                font-size: 32px;
+                line-height: 120%;
+                font-size: 32px;
+                line-height: 40px;
+                color: #fff;
+                padding-bottom: 40px;
+                font-weight: 700;
+                span{
+                    i{
+                        font-family: 'DomaineDisplay';
+                        font-weight: 500;
+                    }
+                }
+            }
+            button{
+                display: block;
+                border-radius: 4px;
+            }
+        }
+    }
+}
+//res
+@media (min-width:600px){
+    .fiverrGuides{
+        padding-bottom: 60px;
+        .container{ 
+            padding: 32px 32px 64px;
+            padding-top: 0;
+            padding-bottom: 0;
+            h2{
+                font-size: 32px;
+                line-height: 120%;
+            }
+            .card{
+                img{
+                    margin-bottom: 16px;
+                }
+                .card-body{
+                    h6{
+                        font-size: 18px;
+                    }
+                    p{
+                        color: #7a7d85;
+                    }
+                }
+            }
+        }
+        .container_second{
+            .signUp_text{
+                padding: 64px 32px;
+                h2{
+                    max-width: 560px;
+                    font-size: 32px;
+                    line-height: 120%;
+                    font-size: 40px;
+                    line-height: 56px;
+                }
+            }
+        }
+    }
+}
+@media (min-width:900px){
+    .fiverrGuides{
+        padding-bottom: 80px;
+        .container{
+            h2{
+                padding-bottom: 24px;
+            }
+            .fiverrGuides__items{
+                // margin-bottom: 0;
+            .card{
+                .card-body{
+                        h6{
+                            padding-bottom: 2px;
+                        p{
+                            color: #7a7d85;
+                        }
+                    }
+                }
+            }
+            }
+            .see_more{
+                position: absolute;
+                right: 25px;
+                top: 20px;
+                
+            }
+        }
+        .container_second{
+            background-color: none;
+            .signUp_text{
+                background-image: url(/img/bg-signup-1400-x1.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                padding: 80px 32px;
+                h2{
+                    max-width: 650px;
+                }
+            }
+        }
+    }
+}
+@media (min-width:1160px){
+    .fiverrGuides{
+        .container{
+            padding: 24px 24px 48px;
+            .see_more{
+                padding: 16px;
+                padding-right: 0;
+                // padding-right: 0;
+            }
+        }
+        .container_second{
+            .signUp_text{
+                padding: 120px 96px;
+                h2{
+                    font-size: 48px;
+                    line-height: 56px;
+                }
+            }
+        }
+    }
+}
+@media (max-width:1160px){
+    .fiverrGuides{
+        .container{
+            padding: 24px 19px 48px;
+            .see_more{
+                padding-top: 16px;
+            }
+        }
+    }
+}
+@media (max-width:991px){
+    .fiverrGuides{
+        .container{
+            .fiverrGuides__items{
+                margin-bottom: 32px;
+        
+            }
+        }
+    }
+}
